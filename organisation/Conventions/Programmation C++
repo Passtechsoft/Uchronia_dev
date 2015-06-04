@@ -1,0 +1,64 @@
+/!\ avis à la populaschtroumphe /!\
+	Si jamais vous modifiez ce fichier, et qu'il ne s'agit pas d'une modif simple genre correction aurthogurafique, gardez ce qu'à fait celui avant vous, mettez le entre des /* et */ puis mettez votre nom ensuite entre parenthèses. (par exemple: la nougatine /*guérit*/(creeper) ne guérit pas du cancer.)
+
+	La programaton c++ est agreable, elle procure comprehension et satisfaction, mas ce language, contrairement au python ou aux languages de scripting bash, nous laisse une (relativement) grande liberté de synthaxe, notemment en ce qui concerne les indentations. La plupart des conventions que nous verrons ici sont largement inspirés de celles de boost, du projet codeblocks et, en moindre mesure, du projet blender. Les dévellopeurs c++ du projet uchronia devrons, du moins pour ceux qui sont au plus près de la programmation des mécaniques du jeu s'intégrer aux habitudes du blender game engine. Nous étudierons dans un autre document les différences entre la présente charte de conventions et celles du projet blender, dans l'objectif de pouvoir créer un script qui convertisse l'une en l'autre.
+
+	En temps que dévellopeur c++ du projet uchronia, vous devez de toute agréer aux conventions typographiques de ce documents. Naturellement, si certaines vous posent un gros problème, nous pouvons le comprendre et il n'y a évidemment aucun problème pour en discuter.
+
+Liste des convention de la charte:
+
+ - Indentation:
+
+	Quand il s'agit de placer des {}, les règles se composent ainsi:
+
+	- Dans tous les cas, vous avez droit d'écrire une instruction comme ça:
+	if(abemus == PAPA)
+	{
+		...
+	}
+
+	Elle est d'ailleur obligatoire quand il s'agit d'autre chose qu'une condition(ou d'une boucle, ce genre d'instructions basiques, nous les appelerons des conditions pour faire vite), par exemple, vous ne pouvez pas déclarer une classe qui ressemble à ça:
+	class papa{
+
+	};
+
+	Si votre condition contient moins de quatres instructions, vous pouvez l'écrire comme ça:
+	void enterprise(){
+		...
+		...
+	}
+
+	si votre condition ne contient qu'une seule instruction, vous pouvez vous passer des {} et l'écrire ainsi:
+	if(yagami>ryuzaki)
+		...
+
+	Espaces dans les longues instructions:
+
+	1 - Etude de trois appels de fonctions imbriqués
+
+	Si vous avez à taper un truc comme ça, ou pire: 
+		getStringUntil(usedLine, ";",   nbreisInThisString(actualLine, expectedParameter,  freezeing(screenState, frequence) )  );
+	
+	Observez bien: on met des espaces après les virgules (ça parraît con, mais tout le monde ne le fais pas si facilement). Si une fonction est à l'interieur d'une autre, remarquez que je saute un second espace après la virgule et que j'en laisse un après la fin de parenthèse. Ainsi, je sépare clairement cette fonction du reste des paramètres. Si cette fonction contient une autre fonction, on utilise la même typographie à ceci près qu'on rajoute encore un espace supplémentaire au début et à la fin de la fonction mère.
+	
+	2 - Etude d'une condition complexe:
+
+	Exemple:
+		if( (biloute == morpheme(0)) || congolexicomatisations >= 17 )	
+
+
+	La déclaration de variables
+
+	1 - Declarations type
+	
+	Je pense que ces exemples se passent d'une description détaillée:
+	- Différends moyens d'écrire des macros:
+		#define COULEUR //pour les variables en un mot
+		#define COULEUR_DE_TES_YEUX //pour les variables en plusieurs
+		#define Couleur_de_tes_yeux //une autre manière de l'écrire
+		#define couleur_()//pour les fonctions
+	
+	- Les noms de fonctions ou de méthode commencent par des minuscules et suivent les mêmes conventions que les variables.
+	- Les noms de classe et de typedef de classes (par exemple: typedef Phoneme vector<char>), ainsi que des enums commencent par une majuscule.
+	- Le nom des variables normales s'écrira toujours avec une minscule au début, 	
+	- Un pointeur ou une référence s'écrit comme une variable normale, mais à la création on préfèrera que l'* ou l'& soit du côté du nom du pointeur plutôt que de son type (ex: int *margoulin)

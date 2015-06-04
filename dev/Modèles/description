@@ -1,0 +1,1 @@
+Quand vous avez besoin de linker une texture, ne l'IMPORTEZ PAS dans votre .blend en cours d'édition (ça consomme masse de place). A La place, je vousautorise à créer des liens vers le dossier textures (plus haut), PUIS d'y accéder relativement, on est pas des programmeurs microsoft qui compilent leurs programmes en static, non madamme! oui je suis ana.. Bref.

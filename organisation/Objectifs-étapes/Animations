@@ -1,0 +1,22 @@
+Personnages:
+
+*		Squelette de marche, de course
+Animation coup de poing
+Animation sortir l'arme
+Animation saut
+Animation marche escalier (se paramètre en fonction de l'escalier)
+
+
+Uchronia F1:
+
+Animation separation et mode voyage stelaire
+Animation tir canon rail
+Animations satellite (sortie rentrée, deploiement des ailes, mode reacteur)
+Animation deplacement (changement de lumière des reacteurs)
+
+Dock:
+
+Animation bras mecaniques geants qui posent les plaques de l'uchronia
+Animation des droides
+Animation de la fumée
+

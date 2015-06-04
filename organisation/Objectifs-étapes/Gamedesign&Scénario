@@ -1,0 +1,28 @@
+/* Dans ce fichier Gamedesign sera traité les idées principales du jeu qui restent à 
+ * developper (à l'écrit). Celà concerne surtout les "niveau" et autres artifices qui 
+ * pimentent le jeu. Un bon gamedesigner se doit d'organiser le niveau entier, de 
+ * décrire les ambiances, les énigmes et les intrigues qui avanceront dans ces niveaux.
+ * De par ses responsabilités, un moment ou mécanisme de gamedesigner est soumis au 
+ * veto de l'équipe scénario, garante de la cohérence de l'ensemble, mais toute idée 
+ * restera archivée pour former une boite à idée dans lequelle nimporte qui pourra 
+ * repiocher si les idées manquent. Une fois le niveau scrupuleusement écrit et relu, 
+ * il sera envoyé aux leveldesigners pour l'implémenter réélement dans le jeu. A noter
+ * qu'un leveldesigner peut être gamedesigner. Les game designers doivent soumettre 
+ * également leurs idées quand ils imaginent créer un nouveau niveau aux scénaristes, 
+ * car cette tâche leur incombe en temps normal. */ 
+
+	/*  Synthaxe:	
+ Les scénaristes écrivent classiquement les rubriques principales, qui représentent des 
+ idées générales sur le niveau, avec des précisions sur l'ambiance par exemple entre 
+ parenthèse (inspirez vous de la synthaxe des documents existants). S'en suit des 
+ accolades, puis des sous parties annoncées par leur nom (ça peut être nimporte quoi, 
+ "Ennemis:" par exemple)
+*/
+Imaginer les 6 niveaux d'énigme()
+{
+	Principe:
+	  
+	
+		
+}
+

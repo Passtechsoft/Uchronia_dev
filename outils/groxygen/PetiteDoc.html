@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8" />
+<html>
+  <head>
+      <title>Microdoc Groxygen</title>
+  </head>
+  
+  <body>
+	  <h1> Documentation Groxygen </h1>
+	  
+	  <p>    Groxygen est un rammasis de commandes bizares qui ont comme but unique de rendre
+	  <br /> présentables tout le fatras de données que l'équipe uchronia project produira chaque jour.
+	  <br /> Evidemment, le nom évoque un peut doxygen, normal, j'ai trouvée la synthaxe de mon 
+	  <br /> "doc generator" tellement alambiquée que j'ai décider de remplacer cette molécule 
+	  <br /> essentielle à la vie par groxy ('groxic'), évoquant plus une groxine neurodégénérative 
+	  <br /> litérallement traduisible par groxic generator, ce qui n'est bien entendu, pas une
+	  <br /> référence à spore. Voila, vous savez tout.
+	  <br />.
+	  <br /> PS: au début je voulais mettre toxic mais tox était déjà pris.
+	  </p>
+	  
+	  <h2> Utilisation </h2>
+	  
+	  <h3> Installation </h3>
+	  <p>	 Cette documentation est normalement fournie avec les sources de Groxygen, qui se
+	  <br /> compile en executant basiquement le script compile.sh, en resortira un executable
+	  <br /> nommé simplement groxygen, qui contient toutes les fonctionnalités citées ci-après.
+	  </p>
+	  
+	  <h3> TFManual </h3>
+	  
+	  <h4> groxygen [file index] </h4> 
+	  
+	  <p></p>
+	  <h2> Synthaxe </h2>
+	  
+	  <p>    La synthaxe de doxygen est un melange douteux entre le c et le html, mefiez vous de ceux
+	  <br /> qui invoquent ce genre de mariage incestueux.
+	  </p>
+	  
+	  <p>    Parce qu'il faut bien commencer par quelque chose, le fichier donné en paramètre est un
+	  <br /> pur fichier de script, il sert à donner le cemin des autres fichiers qui composent la 
+	  <br /> documentation et à définir leur fonction dans leur documentation, ceci peut influer sur 
+	  <br /> la manière dont ceux-ci seront affichés. Ci-dessous les différentes balises que vous 
+	  <br /> pourrez déposer dans nimporte quel ordre dans ce fichier (faites en sorte que ça reste
+	  <br /> lisible, hein, sinon, moi je sert à rien ;) .
+	  </p>
+	  <ul>
+	    <li><h4>mainpage: [chemin]</h4></li>
+	    <p>La page qui devra s'ouvrir en premier dans le site, elle bénéficie d'améliorations synthaxiques.
+	    <br />que je détaillerais plus loin.
+	    </p>
+	    <li><h4>page: [chemin]</li></h4>
+	    <p>Juste une page de doc
+	    </p>
+	    <li><h4>savedir: [chemin]</h4></li>
+	    <p>On va donner l'endroit où seront sauvegardés les pages html compilés.
+	    </p>
+	    <li><h4>cmd: [tempo]; [commande]</li></h4>
+	    <p>Executera cette commande (système) au moment tempo définit. tempo peut prendre ces valeurs: BEGIN et END.
+	    </p>
+	  </ul>
+  </body>
+</html>
