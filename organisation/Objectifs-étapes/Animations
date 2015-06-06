@@ -13,10 +13,12 @@ Animation separation et mode voyage stelaire
 Animation tir canon rail
 Animations satellite (sortie rentrée, deploiement des ailes, mode reacteur)
 Animation deplacement (changement de lumière des reacteurs)
+Animer les reacteurs.
 
 Dock:
 
 Animation bras mecaniques geants qui posent les plaques de l'uchronia
-Animation des droides
-Animation de la fumée
+Animation des droides qui font des rondes et autres mouvements routiniers
+Animation de la fumée (sur la lune attention, donc très rapide puisque gaz)
+
 

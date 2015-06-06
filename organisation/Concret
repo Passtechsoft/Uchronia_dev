@@ -1,9 +1,27 @@
 /* Dans ce fichier sont détaillés les objectifs complets, concrets si je puis 
 dire, qui ferons avancer notre projet par paliers. Ce fichier est une feuille
 de route, et sert de base pour le découpage des tâches dans le dossier 
-"Objectifs Etapes", car quasiment chaque objectif concret nécessite la collaboration de plusieurs secteurs de l'équeipe de dev, sinon de toute. 
+"Objectifs Etapes", car quasiment chaque objectif concret nécessite la collaboration
+de plusieurs secteurs de l'équeipe de dev, sinon de toute. 
+
+  Certains objectifs etapes qui sont originellement assignés à un groupe peuvent 
+  être assignés à plusieurs ultérieurement. C'est au groupe demandeur de formuler 
+  clairement sa demande d'aide à l'autre.
 	Bonne lecture, et puisse saint iGNUcius porter votre travail. */
 
-Créer le hall du SDL
+liens: Créer le hall du SDL;HALL
 	- Créer les deux arrêts de monorail
 	- Créer les plateformes, et disposer les décors (bras robots, etc...)
+
+Créer les quelques pièces indispensables dans l'uchronia.
+  - créer le poste de commandement avec la salle consacrée à omnis.
+  - Créer la soute.
+  - Terminer les vehicules (macco, modifier le mustachecar, en inventer deux ou trois autres.)
+
+Créer l'animation du décollage pour aller dans l'espace.
+  
+Créer de bons LOD, pour les rails notemment.
+  
+Créer les 6 salles d'énigme
+
+Créer les 3 salles d'entrainement
