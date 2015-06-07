@@ -60,5 +60,5 @@ Liste des convention de la charte:
 	
 	- Les noms de fonctions ou de méthode commencent par des minuscules et suivent les mêmes conventions que les variables.
 	- Les noms de classe et de typedef de classes (par exemple: typedef Phoneme vector<char>), ainsi que des enums commencent par une majuscule.
-	- Le nom des variables normales s'écrira toujours avec une minscule au début, 	
+	- Le nom des variables normales s'écrira toujours avec une minscule au début, et avec des majuscules ensuites au début de chaque mot, comme ça: maVariable
 	- Un pointeur ou une référence s'écrit comme une variable normale, mais à la création on préfèrera que l'* ou l'& soit du côté du nom du pointeur plutôt que de son type (ex: int *margoulin)

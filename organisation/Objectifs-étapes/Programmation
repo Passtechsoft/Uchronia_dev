@@ -1,3 +1,5 @@
 Voir pour la fonctio de dégradés ( actualiser une animation tous les X )
 Coder les menus, notemment le menu principal.
 Les deplacements
+
+Créer le moteur qui fait qu'en deça d'une certaine différence de vitesse, un objet qui en rencontre un autre y reste attaché.
