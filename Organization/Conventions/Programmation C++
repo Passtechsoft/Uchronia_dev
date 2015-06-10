@@ -3,7 +3,7 @@
 
 	La programaton c++ est agreable, elle procure comprehension et satisfaction, mas ce language, contrairement au python ou aux languages de scripting bash, nous laisse une (relativement) grande liberté de synthaxe, notemment en ce qui concerne les indentations. La plupart des conventions que nous verrons ici sont largement inspirés de celles de boost, du projet codeblocks et, en moindre mesure, du projet blender. Les dévellopeurs c++ du projet uchronia devrons, du moins pour ceux qui sont au plus près de la programmation des mécaniques du jeu s'intégrer aux habitudes du blender game engine. Nous étudierons dans un autre document les différences entre la présente charte de conventions et celles du projet blender, dans l'objectif de pouvoir créer un script qui convertisse l'une en l'autre.
 
-	En temps que dévellopeur c++ du projet uchronia, vous devez de toute agréer aux conventions typographiques de ce documents. Naturellement, si certaines vous posent un gros problème, nous pouvons le comprendre et il n'y a évidemment aucun problème pour en discuter.
+	En temps que dévellopeur c++ du projet uchronia, vous devez de toute agréer aux conventions typographiques de ce documents. Naturellement, si certaines vous Sposent un gros problème, nous pouvons le comprendre et il n'y a évidemment aucun problème pour en discuter.
 
 Liste des convention de la charte:
 
@@ -14,6 +14,7 @@ Liste des convention de la charte:
 	- Dans tous les cas, vous avez droit d'écrire une instruction comme ça:
 	if(abemus == PAPA)
 	{
+		...
 		...
 	}
 
@@ -43,7 +44,7 @@ Liste des convention de la charte:
 	
 	2 - Etude d'une condition complexe:
 
-	Exemple:
+	Exempl
 		if( (biloute == morpheme(0)) || congolexicomatisations >= 17 )	
 
 

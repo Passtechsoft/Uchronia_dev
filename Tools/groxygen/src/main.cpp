@@ -12,7 +12,8 @@ typedef unsigned int oct4_e;
 bool questionOfTheDeath()
 {
   char questions[2][100]={"			Etes vous sur de vouloir continuer? (y/n)", "		Seriousement?(y/n)"};
-  for(int c=0; c!=2; c++){
+  for(int c=0; c!=2; c++)
+  {
     cout<<endl<<questions[c];
     getline(cin, reponse);
     if(reponse=="y"||reponse=="o")
