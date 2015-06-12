@@ -1,6 +1,10 @@
 /!\ avis à la populaschtroumphe /!\
 	Si jamais vous modifiez ce fichier, et qu'il ne s'agit pas d'une modif simple genre correction aurthogurafique, gardez ce qu'à fait celui avant vous, mettez le entre des /* et */ puis mettez votre nom ensuite entre parenthèses. (par exemple: la nougatine /*guérit*/(creeper) ne guérit pas du cancer.)
 
+/!\ Exeption /!\
+Pour les dévellopeurs qui ont à travailler directement dans les fichiers d'un autre programme (par exemple, les ficiers sources de blender), ils doivent se plier aux conventions dudit projet.
+
+
 	La programaton c++ est agreable, elle procure comprehension et satisfaction, mas ce language, contrairement au python ou aux languages de scripting bash, nous laisse une (relativement) grande liberté de synthaxe, notemment en ce qui concerne les indentations. La plupart des conventions que nous verrons ici sont largement inspirés de celles de boost, du projet codeblocks et, en moindre mesure, du projet blender. Les dévellopeurs c++ du projet uchronia devrons, du moins pour ceux qui sont au plus près de la programmation des mécaniques du jeu s'intégrer aux habitudes du blender game engine. Nous étudierons dans un autre document les différences entre la présente charte de conventions et celles du projet blender, dans l'objectif de pouvoir créer un script qui convertisse l'une en l'autre.
 
 	En temps que dévellopeur c++ du projet uchronia, vous devez de toute agréer aux conventions typographiques de ce documents. Naturellement, si certaines vous Sposent un gros problème, nous pouvons le comprendre et il n'y a évidemment aucun problème pour en discuter.
@@ -63,3 +67,10 @@ Liste des convention de la charte:
 	- Les noms de classe et de typedef de classes (par exemple: typedef Phoneme vector<char>), ainsi que des enums commencent par une majuscule.
 	- Le nom des variables normales s'écrira toujours avec une minscule au début, et avec des majuscules ensuites au début de chaque mot, comme ça: maVariable
 	- Un pointeur ou une référence s'écrit comme une variable normale, mais à la création on préfèrera que l'* ou l'& soit du côté du nom du pointeur plutôt que de son type (ex: int *margoulin)
+	- Les noms de fichiers suivent les mêmes conventions que les variables.
+
+	Les Classes:
+
+	Nous vous conseillons de mettre les arguments private après les arguments publics, parce que c'est l'experience utilisateur qui compte, et que l'utilisateur préfèrera avoir accès directements aux fonctions et arguments qui le concernent lors de la lecture de votre code. On ne fais pas de tablutation entre la première "{" et le mot clé "public".
+	
+	Les methodes, comme les autres fonctions suivent la même typographie que les variables.

@@ -1,22 +1,31 @@
-<p>Ici, tous les memebres participants connus au pojet sont notés, avec leur rôles dans l'ordre décroissant, dans l'ordre alphabetique en partant des noms de famille:
+<!doctype html>
+<meta charset="utf-8" />
+<html>
+	<head> 
+		<title> Yes sir! </title>
+	</head>
+
+	<p>Ici, tous les memebres participants connus au pojet sont notés, avec leur rôles dans l'ordre décroissant, dans l'ordre alphabetique en partant des noms de famille:
 </p>
 
 
-<ul>Staff de dévellopement actif:</ul>
+	<ul><h2>Staff de dévellopement actif:</h2>
 
-<li><strong>Creeper Deking: </strong>Initialteur du projet, scénariste principal, assisant programmeur(C++), modéliste 3D(blender)</li> 
+	<li><strong>Creeper Deking:</strong> Initialteur du projet, scénariste principal, assisant programmeur(C++), modéliste 3D(blender)</li> 
 
-Tristan Panzer: Initiateur du projet, c'est le BOSS(Bienveillant Original Sympathique Salvateur). Programmeur principal(C++, python), modéliste 3D. 
- 
-Membres du projet, contributeurs occasionels:
+	<li><strong>Tristan Panzer:<strong> Initiateur du projet, c'est le BOSS(Blenderiste Original Sympathique Stalinien). Programmeur principal(C++, python), modéliste 3D. </li>
+	</ul> 
 
-Nanela Panzer: Consultante musicale
+	<ul><h2>Membres du projet, contributeurs occasionels:</h2>
 
-Slackevin 
+	<li>Nanela Panzer: Consultante design, musicale, un peut tout...</li>
 
-Yann Solitaire
+	<li>Slackevin</li> 
 
-Moumou Pari
+	<li>Yann Solitaire</li>
 
+	<li>Moumou Pari</li>
+	</ul>
 
+</html>
 
