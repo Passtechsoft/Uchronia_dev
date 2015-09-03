@@ -1,0 +1,7 @@
+UNIX to DOS:
+
+sed 's/$/^M/' fichier
+
+DOS to UNIX
+
+sed 's/^M$//' fichier
