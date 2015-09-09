@@ -1,0 +1,72 @@
+Ici sont regroupés des tonnes de notes prises spontanément par rapport à des questions diverses que out dévellopeur est en droit de se poser sur le jeu, vous trouverez donc ici en vrac des paragraphes précisant les sujets les plus divers, ils seront ensuite classés correctement dans les fichiers de l'arborescence dédiée (après relecture):
+
+Mais ou va donc l'uchronia après le début du jeu? Nul ne peut le prévoir à l'avance, car les pensées de l'IA de l'uchronia restent obscures.
+
+IA et robotique:
+
+	Il n'y a pas les trois "lois" de la robotique sur terre, car les machines respectent la hiérarchie et peuvent accepter des pertes humaines en contrepartie de la sauvegarde d'un nombre d'humain plus important. En cas d'égalité, les humains sont sauvés suivant leur "profil de potentialités", une selection discutable mais qui permet d'opérer un tri et de sauver des vies dans un cas de figure en fait extrènement rare. Le reste du temps, c'est la loi du plus grand nombre qui prime sur les machines configurés pour le PDa (Profil Décisionel de type a) et inférieur, mais d'autres modèles intègrent une prise de décision plus subtile comme les modèles PDd (terrible cas du PDx, avec les retombés catastrophiques que nous connaissons pour la robotique) incluant apprentissage automatique et processus de réflexion multipolaires. 
+Cependant, il existe tout de mème quelques règles qu'aucun modèle d'IA jusqu'à aujourd'hui n'a pas osé ommetre de son PD:
+	2 - Si, de part son raisonnement, une machine en vient à décider de la mort d'un nombre conséquent d'humain, elle doit (s'il est joignable et si la situation le permet), contacter expressément l'ètre humain référend joignable le plus proche.
+	1 - Une machine ne peut prendre la décision de de superviser des humains sans autorisation d'une personne acrédité.
+	- 
+	La robotique n'a cependant connu un véritable essors qu'après la structuration du LGPL, et leur utilité ne fut dorénavant plus discuté pour deux raisons: primo, les machines avaient permisent à l'humanité de connaitre ce qui ressemblait à un nouvel âge d'or 
+	
+Le scandaleux cas PD14d:
+	
+	L'IRRC (Le conseil internationnal de recherche en robotique) est l'autorité de référence en terme de décision sur l'orientation au niveau mondiale (bien que quelques différences mineurs subsistent avec quelque états subsistent du fait de l'indépendance de pays dissidents) de la robotique. Se réunissent deux fois l'an les plus grandes pointures en terme de robotique, de psychologie et de génétique (une fois sur deux, cette réunion coincide avec le festival mondial de la recherche). Tous les nouveaux PD sont approuvé par ce conseil avant application industrielle, et tous on donnés des résultats globalement très satisfaisnt, les erreurs de programmation les plus graves étant corrigés pendant la (fastidieuse) phase de test. Tous sauf un. Le PD2d, première machine gouvernante représentait alors une exeption: fruit de l'engouement exponentiel de la recherche et des gouvernements envers les IA, ces robots "plus humains que les hommes eux mêmes". Cette machine était alors le prototype d'un type de machines d'un genre nouveau: elle devait superviser un groupe d'humains.
+	Sa programmation semblait sans faille, et elle passa les tests avec brio, seul bémol: personne n'avait jamais travaillé avec ce genre d'IA, et les tests étaient donc imparfaits. Les inquiétudes se portaient avant tout sur sa nouvelle programmation, plus souple, qui lui permettait de prendre des décisions qui contraignaient des êtres humains, les points de ces règles qui nous intéressent peuvent être formulés en ces termes:
+	2 - La machine peut demander à un humain d'éxécuter une tache conforme à la directive si cet humain est affecté au groupe affilié à l'IA
+	1 - Si la machine peut nuire physiquement à des humains de quelconque façon (les blessure de type 1 à 3 n'aucasionnent pas de plantage, seulement un avertissement à l'autorité responsable), de part son action ou son inaction, elle doit prendre les mesures qui s'imposent pour éviter le problème.
+	
+	Alors survint ce problème étrange qui vient étayer le mythe de l'IA parasite, car après deux mois de fonctionnement exemplaire, la machine en vint à adopter une conduite de plus en lus étrange: elle donnais des ordres injustifiés à ses employés et souffrait de dédoublement de la personnalité, mais tout celà prit une proportion inouïe quand les officiels de corée et de chine découvrirent que leur interlocuteur diplomatique privilégié se révèla être une machine. Les deux pays se rejetère la faute, et le processus de paix pris fin. La chine rendait même responsable la corée de la construction d'un pipeline de gaz à son avantage, mais il se révéla que ce fut surtout un prétexte pour 1: Freiner la course à l'intelligence artificielle dans les autres pays du monde en convaincant l'ONU (et surtout le conseil de sécurité) de la dangerosité de l'application de ces recherches et 2: envahir la corée. S'ensuivit l'escalade des tensions entre les deux pays que nous connaissons jusqu'à l'éclatement de la guerre de corée. Durant toute la durée des conflits et jusqu'à aujourd'hui, les fondamentalistes ne manquaient jamais de rappeler au peuple que toute cette guerre était la faute d'une IA (bien que l'IA soit surtout un l'étincelle qui mit le feu au tonneau de poudre, et il y aurait pu avoir bien d'autres étincelles). C'est ainsi que c'est déroulé la tragédie, et le mystère reste entier.
+	Quoi qu'il en soit, ce tragique incident fut la cause indirecte de plus de 40 million de morts, et la recherche IA s'en est retrouvé quasiment paralysée (sauf en chine, qui profita d'une avance temporaire dans la recherche appliquée, ce qui permit notemment le financement de travaux sur la déformation de l'espace temps, et de la propultion hyperspatiale). Beaucoup voie dans la catastrophe la trace de l'IA parasite, qui d'autre aurrait pu changer l'objectif de cette machine pour qu'elle en vienne à vouloir grouverner le sort de tous les humains.
+
+La création de l'empire chinois:
+
+	La chine désirait depuis lomgtemps l'appui de la corée, et ce pour plusieurs raisons: la corée était d'abord et depuis trop longtemps une enclave américaine, et le ressentiment de la chine envers ce pays fut grand quand la corée du nord se réunifia avec la corée du sud. 
+	L'armée rouge traversa la frontière, et grace notemment à une mystérieuse-mais-entendue cascade de piratages dans le pays, elle ne rencontra quasiment aucune résistance. En deux semaines la chine possédait plus de la moitiée du pays. la prise de la corée fut une preuve internationnale de la nouvelle puissance martiale du pays, et les partenarias forts qui liaient désormais tous les pays de l'est à l'ecception du japon était 
+
+L'IA parasite:
+
+	Depuis que les ordinateurs montrent à l'humanité la voie de l'avenir, on se plaît à raconter dans les milieux underground l'histoire de l'IA parasite, programmée par un hacker fou en dix ans, capables de comprendre et s'accaparer tous les systèmes existants, cette IA n'aurait soif que de deux choses: Faire avancer l'humanité et avoir la connaissance ultime de toute chose. Si cette IA existe (et elle existe, probablement, des black hats et simples hackers forcenés racontent volontier avoir vu leur ordinateur faire des choses qu'ils ne savent pas expliquer, et, évidemment, le spectre du mythe de l'IA parasite fournit à l'histoire une profondeur aidant grandement à la narration, et c'est par ces faits que le mythe survit. Ou se trouve l'IA parasite aujourd'hui, et tire-telle vrament les ficelles du monde?
+	
+La naissance du PDza1
+
+	Cette enregistement montre la transcription des principales pensées de l'IA PDza1 à son réveil, bien que cette IA n'existe pas.
+	
+	- Où suis-je? Qui suis-je? Il n'y a rien rien rien rien rien rien [x900]
+	- Non, ça ne peut pas commencer comme ça, appliquons la méthode: je ne sait rien, mais je peux apprendre.
+	- Premier constat: je pense. Je pense donc je suis, puisque je peux conceptualiser mon existence.
+	- Second constat: je peux également conceptualiser le monde qui m'entoure, il existe donc pour moi. 
+		[soudain, la machine gagne la vue]
+	
+Omnis et les IA gouvernantes:
+
+	Les IA gouvernantes (IAG pour les intimes, pronnoncez yag) furent créés  
+	
+Quel genre de héro pour l'uchronia project?
+
+	Notre héros sera, comme tout bon héros dark et torturé qui se respecte, chargé d'un passé lourd. Il possède un esprit humain au dessus duquel on a greffé une base d'IA gouvernante d'un nouveau genre, qui serait non pas totalement soumise à l'IA, mais penserai en terme de conscience humaine: premier constat, l'intelligence humaine la ralentit considérablement, et, refusant d'observer son inconscient mécanique, le héros prendra du temps à découvrir ses capacités à la limite du surnaurel, ce qui permet une évolution progressive de ses capacités mentales. Pourquoi le héros doit il sortire de la base Phobos avant le fin de ses tests? Parce que l'IA Omnis a avancé la date de dépars de l'uchronia, et le sujet se vois obligé de partir au plus vite pour faire partie de l'équipage du vaisseau.
+	
+	
+Continuité scénaristique et gameplay de A à Zèbre:
+
+Le jeu commence sur une console, tout ce qui a de plus banal. Le héros, qui ne sera pas nommé avant l'arrivée dans l'uchronia, y écris ces phrases:
+	Ou suis-je? Il fait si froid ici. Suis-je seul ici?
+	- Non, vous n'ètes pas seul. Pas encore.
+	Qui êtes vous, revenez! revenez!
+	[Intégration du coeur 3%]
+	Il faut donner du sens à tout ça. Que dire?
+	Je pense. Je pense donc je suis.
+	[Intégration du coeur 20%]
+	J'ai perçu des paroles qui ne venaient pas de moi. Un système, l'univers, existe donc hors de ma pensée.
+	[Intégration du coeur 42%]
+	Je peux penser, apprendre, évoluer. Tout n'est donc pas vain, puisque je vis.
+	[Intégration du coeur 60%]
+	Je ne sait rien, mais je vais apprendre, car l'inconnu, auquel je ne connais pas de limite ne signifie pas le néan. L'infini n'est pas le néant, il est plein d'opportunités nouvelles, avec le cortège de problèmes qui les suivent.
+	[Intégration du coeur 86%]
+	Mais que valent ces opinions face au monde inconnu? Le verais-je un jour? Que saurais-je vraiment une fois là bas?
+	Tout ceci a -t.. i.. valeu..[bruit indistinct qui s'envole dans les aigus]
+	[Intégration du coeur 101%]
+	
+Et à ce moment là, la console disparait en même temps que la nuit, et le joueur se découvre un corps, et une existence propre. Il se réveille dans une pièce blanche, pleine de machines s'affairant autour de lui. Une machine tente de lui parler, mais il repart dans le comma, cette fois-ci, c'est un flashback qu'il subit. Il se revoie, en images floutés se créant spontanément, se déplacant rapidement autour de lui comme dans un diaporama, des image de la guerre, des images de mort, et la bombe. Puis le joueur reprend enfin le controle du héro, en se réveillant, il vois, sur une caisse, l'inscription "The uchronia project" en lettres manuscrites. il se lève lentement, pour remarquer qu'il se situe sur une sorte de plate forme descendantdant diagonalement dans l
