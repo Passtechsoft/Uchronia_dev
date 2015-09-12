@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1427111225 source:c:\users\alexis\documents\blender\progs\namelistgen\main.cpp
+	<unistd.h>
+	<cstdlib>
+	<cmath>
+	<ctime>
+	<sys/time.h>
+	<iostream>
+	<string>
+	<fstream>
+	<ostream>
+	<array>
+	<vector>
+	<map>
+	<queue>
+	<list>
+
