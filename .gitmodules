@@ -1,0 +1,3 @@
+[submodule "Dev/Programmation/BGE"]
+	path = Dev/Programmation/BGE
+	url = https://github.com/panzergame/bge_terrain.git
