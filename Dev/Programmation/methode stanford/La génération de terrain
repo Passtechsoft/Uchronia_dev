@@ -1,0 +1,20 @@
+D'abord, nous utiliserons la methode stanford pour générere les zones, ensuites, nous appliquerons à ces zones un léger bruit "diamond square noise" pour fractaliser les hauteurs sur le nombre de niveau voulu. Enfin, le terrain généré, on lui appliquera des effets divers tel que l'érosion et on sertera à chaque zone un biome selon une simulation du vent et de la dynamique aquatique. Nous utiliserons la methode stanford, nommée ainsi car elle est le fruit de l'étude d'un étudiant de ladite université.
+
+Note: vous retrouverez l'article original ici: http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/
+
+Contrairement à la grande majorité des autres méthodes de générations de map, la methode que je vais vous présenter fonctionne sur un modèle de poligone en place de tuiles. Généralement, on utilise tout un tas de tuiles (ou chunks) carrés servant de bases à la génération du terrain, mais je vous propose de vous affranchir de ça en générant une carte faite de polygones, voici un aperçu du résultat:
+voronoi-map-goal-16000-shaded.png
+
+Et un aperçu de l'étape une, qui découpe la carte en polygones:
+overview.png
+
+
+L'avantage des polygones est qu'ils sont facilements éditables et permettent de controller de grandes surfaces de jeu sans avoir à se préoccuper de générer du bruit à la main, celui-ci sera set ensuite, mais je vous laisse déjà imaginer un éditeur de terrain fonctionnant sur ce principe qui permetterait d'éditer ces zones en les coloriant par exemple, ce qui permetterait de visualiser le monde en création, le moteur s'occupant ensuite de le générer avec nos presets.
+
+Etape 1: Générer les polygones
+
+	Nous allons d'abord générer une image ressemblant à celle-ci:
+	voronoi-polygons.png
+	
+	Pour celà, on crée un certain nombre de points aléatoires, puis on génère des polygone de Voronoi (voir l'annexe). C'est sympas, mais pas suffisant. Nous allons donc utiliser une varialte de la relaxation de Lloyd (voir annexe encore). Cet algo, pour faire court, remplace chaque point par le barycentre du polygone. On peut se contenter principalement de faire la moyenne des points du polygone. En appliquant cet algorythme le bombre désiré de fois, on finit par avoir un smooth convenable pour travailler avec ce modèle.
+	
