@@ -135,8 +135,8 @@ namespace Unoise
         }
     }
 
-    /*//s'appuyant sur le bruit de perlin, cet algo va génerer sur une zone memoire donnée un bruit du modpoint displacement
-    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float z, float res, ushort tailleArray, DiamondPermTable* perm)
+    //s'appuyant sur le bruit de perlin, cet algo va génerer sur une zone memoire donnée un bruit du modpoint displacement
+    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float y, float res, ushort tailleArray, DiamondPermTable* perm)
     {
         if(perm==nullptr)
         {
@@ -156,7 +156,7 @@ namespace Unoise
 
         }
         //return 0;
-    }*/
+    }
 
     /**
     * \param x La position X

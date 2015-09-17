@@ -16,5 +16,5 @@ Etape 1: Générer les polygones
 	Nous allons d'abord générer une image ressemblant à celle-ci:
 	voronoi-polygons.png
 	
-	Pour celà, on crée un certain nombre de points aléatoires, puis on génère des polygone de Voronoi (voir l'annexe). C'est sympas, mais pas suffisant. Nous allons donc utiliser une varialte de la relaxation de Lloyd (voir annexe encore). Cet algo, pour faire court, remplace chaque point par le barycentre du polygone. On peut se contenter principalement de faire la moyenne des points du polygone. En appliquant cet algorythme le bombre désiré de fois, on finit par avoir un smooth convenable pour travailler avec ce modèle.
+	Pour celà, on crée un certain nombre de points aléatoires, puis on génère des polygone de Voronoi (voir l'annexe, algo de fortune). C'est sympas, mais pas suffisant. Nous allons donc utiliser une varialte de la relaxation de Lloyd (voir annexe encore). Cet algo, pour faire court, remplace chaque point par le barycentre du polygone. On peut se contenter principalement de faire la moyenne des points du polygone. En appliquant cet algorythme le bombre désiré de fois, on finit par avoir un smooth convenable pour travailler avec ce modèle.
 	

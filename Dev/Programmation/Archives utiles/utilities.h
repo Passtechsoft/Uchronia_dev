@@ -107,7 +107,7 @@ namespace Unoise
     float perlinNoise(float x, float z, float res, PermTable* perm=nullptr);
 
     ///Midpoint displacement noise, ou Diamond square noise (nom latin: carrus diamus)
-    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float z, float res, ushort tailleArray=10, DiamondPermTable* perm=nullptr);
+    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float y, float res, ushort tailleArray=10, DiamondPermTable* perm=nullptr);
 }
 
 #endif // UTILITIES_H_INCLUDED

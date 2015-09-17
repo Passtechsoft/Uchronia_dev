@@ -1,7 +1,0 @@
-D'abord, nous utiliserons la methode stanford pour générere les zones, ensuites, nous appliquerons à ces zones un léger bruit "diamond square noise" pour fractaliser les hauteurs sur le nombre de niveau voulu. Enfin, le terrain généré, on lui appliquera des effets divers tel que l'érosion et on sertera à chaque zone un biome selon une simulation du vent et de la dynamique aquatique.
-
-Methode standford
-
-	Nommée ainsi car je l'ai choppée sur le blog d'un étudiant de l'université.
-
-	
