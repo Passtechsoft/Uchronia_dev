@@ -19,7 +19,7 @@ string getWord(ushort word_num, string &chaine)
 {
     string word;
     int compteur=0;
-    for(unsigned int c=0; c!=chaine.size(); c++)
+    for(unsigned int c=0; c!=chaine.size(); ++c)
     {
         if(compteur==word_num)
             word.push_back(chaine[c]);
@@ -36,10 +36,10 @@ string getWord(ushort word_num, string &chaine)
 
 bool isInWord(std::string word, std::string subWord)
 {
-	int degresLectureSubWord=0;
+	unsigned int degresLectureSubWord=0;
 
 	bool trouve=false;
-	for(unsigned int c=0; c!=word.size() && !trouve; c++)
+	for(unsigned int c=0; c!=word.size() && !trouve; ++c)
 	{
 		if(word[c]==subWord[degresLectureSubWord])
 			degresLectureSubWord++;
@@ -63,7 +63,7 @@ std::vector<std::string> getFileWithSthx(std::ifstream &flux, unsigned int nbreM
 
 	flux>>word;
 	unsigned int c=0;
-	for(;word!=";" && flux; c++)
+	for(;word!=";" && flux; ++c)
 	{
 		instructions.push_back(word);
 		flux>>word;
@@ -90,9 +90,8 @@ float positif(int a)
 
 namespace Unoise
 {
-    PermTable* lambdaPermTable=nullptr;//La table de permutation de base
-    DiamondPermTable* lambdaDiamsPermTable=nullptr;
-    int seed=0;//Le seed!!!
+    PermTable* lambdaPermTable=nullptr;//La table de permutation de base*
+    int seed=42;//Le seed!!!
 
     void setSeed(int graine)
     {
@@ -114,7 +113,7 @@ namespace Unoise
         unsigned short buffer;
         bool finish=false;
         //On crée toutes les 256 cases de la table de permutation
-        for(unsigned short c=0;c!=256;c++)
+        for(unsigned short c=0; c!=256; ++c)
         {
             //Tant qu'on a pas trouvé un nombre qui n'est pas dans la liste
             while(!finish)
@@ -123,7 +122,7 @@ namespace Unoise
                 buffer = rand() % (255 + 1);//On calcul un nouveau nombre
 
                 //Tant qu'on est pas arrivé au nombre qu'on est sensé calculer actuellement:
-                for(unsigned short d=0; d!=c; d++){
+                for(unsigned short d=0; d!=c; ++d){
                     if(buffer == pttable->at(d))//Si par malheur on a déjà généré ce nombre
                         finish = false;//On recommence
                 }
@@ -135,27 +134,159 @@ namespace Unoise
         }
     }
 
-    //s'appuyant sur le bruit de perlin, cet algo va génerer sur une zone memoire donnée un bruit du modpoint displacement
-    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float y, float res, ushort tailleArray, DiamondPermTable* perm)
+    struct point2Dui
     {
-        if(perm==nullptr)
+		point2Dui(unsigned int _x, unsigned int _y) : x(_x), y(_y) {}
+		unsigned int x,y;
+    };
+
+	///Cette fonction va donner à l'utilisateur la hauteur des quatres points les plus proches
+	///\note Elle n'est faite que pour être utilisée par DiamondSquareNoise
+	///\warning Si cette fonction occure un segfault, celà vient probablement du fait que pas ou tableau est à une valeur érronnée
+	///\param tableau Une référence vers le chunk père du point
+	///\param pas Le nombre de points par lequel on est autorisé à parcourir le chunk (de un \n en un pour les chunk finis, de quatre en quatre pour les chunks qu'il reste à subdiviser deux fois)
+	///\param phase Détermine si le point est en phase carré ou diamond, ce qui nous donne un indice sur les points l'environnant
+	std::vector<float> getPositionsAround(ChunkPoints* tableau, point2Dui point, int pas, std::array<std::vector<float>, 4>* pointsEnvironnants=nullptr, bool phase=1)
+	{
+		std::vector<float> positions;
+		//Si on est en phase carré, alors on peut se permettre de tout envoyer
+		if(phase)
+		{
+			positions.push_back(tableau->at(point.x-pas).at(point.y-pas));
+			positions.push_back(tableau->at(point.x+pas).at(point.y-pas));
+			positions.push_back(tableau->at(point.x-pas).at(point.y+pas));
+			positions.push_back(tableau->at(point.y-pas).at(point.y-pas));
+		}
+		//Si on est en phase diamond et que les points environnants sont définis, on fait les tests supplémentaires
+		else if(!phase && pointsEnvironnants)
+		{
+			if(point.x-pas < 0)
+				positions.push_back(pointsEnvironnants->at(3).at(point.y));
+			else
+				positions.push_back(tableau->at(point.x-pas).at(point.y-pas));
+
+			if(point.x+pas >= tableau->size())
+				positions.push_back(pointsEnvironnants->at(1).at(point.y));
+			else
+				positions.push_back(tableau->at(point.x+pas).at(point.y-pas));
+
+			if(point.y-pas < 0)
+				positions.push_back(pointsEnvironnants->at(0).at(point.x));
+			else
+				positions.push_back(tableau->at(point.x-pas).at(point.y+pas));
+
+			if(point.y+pas >= tableau->size())
+				positions.push_back(pointsEnvironnants->at(2).at(point.x));
+			else
+				positions.push_back(tableau->at(point.y-pas).at(point.y-pas));
+		}
+		//Si on est juste en phase diamond, on met le nombre de points nécessaires
+		else
+		{
+			if(point.x-pas >= 0)
+				positions.push_back(tableau->at(point.x-pas).at(point.y-pas));
+
+			else if(point.x+pas < tableau->size())
+				positions.push_back(tableau->at(point.x+pas).at(point.y-pas));
+
+			else if(point.y-pas >= 0)
+				positions.push_back(tableau->at(point.x-pas).at(point.y+pas));
+
+			else if(point.y+pas < tableau->size())
+				positions.push_back(tableau->at(point.y-pas).at(point.y-pas));
+		}
+
+		return positions;
+	}
+
+    ///Cet algo génère sur une zone memoire donnée un bruit de type midpoint displacement
+    ///\note Vous trouverez des informations sur le fonctionnement interne de cette fonction dans le fichier algoinfos rubrique diamondSquareNoise
+    ///\warning Il est interdit de mettre pos à 1 ou à 0, car ça signifierait que le nombre de point par coté vaut 2
+    ///\param x La position du chunk virtuelle X, inutile dans les versions primitives de la fonction
+    ///\param y	La position du chunk virtuelle Y, inutile dans les versions primitives de la fonction
+    ///\param amplitude La hauteur maximale d'un point (la valeur minimale est l'opposée de l'amplitude
+    ///\param res La résolution, c'est à dire la rapidité de la réduction du bruit
+    ///\param subDivisions Le nombre de subdivisions appliqués, pour trouver le nombre de points par coté ça fait, calculez: pow(2, subDivisions)+1
+   ChunkPoints diamondSquareNoise(float x, float y, int amplitude, float res, ushort subDivisions, int nseed, std::array<float, 4>* pointsPrincipaux, std::array<std::vector<float>, 4>* pointsEnvironnants)
+    {
+		if(seed<0)
+			seed=nseed;
+		ChunkPoints chunkPoints;//le tableau qui contient tous les nouveaux points du chunk
+
+		uint nbrePointsCote=pow(2, subDivisions)+1;
+		#define nbrPtsCotePaire (nbrePointsCote-1) //Utile dans de nombreux calculs où nous n'avons pas besoins de prendre en compte le point qui viens fermer le bord
+
+        chunkPoints.resize(nbrePointsCote);
+        for(uint c=0; c!=nbrePointsCote; c++)
+			chunkPoints[c].resize(nbrePointsCote);
+
+		//On teste si le paramètre pointsenvironnants est correctement initialisé
+		if(pointsEnvironnants){
+		int tmpNbrePts;
+		for(uint c=0; c!= pointsEnvironnants->size(); ++c)
+			tmpNbrePts+=pointsEnvironnants->at(c).size();
+		if(tmpNbrePts != nbrPtsCotePaire*4)
+		{
+			WARNING("diamondSquareNoise: le paramètre pointsEnvirronants ne contient pas\n le nombre attendu de points, il ne sera pas utilisé.");
+			pointsEnvironnants=nullptr;//Ce qui va permettre de faire comme si ce paramètre déficient n'avait pas été entré
+		}
+		}
+
+
+		INFO("Le chunk de subdivision "<<subDivisions<<" généré vaut "<<nbrePointsCote<<" points de coté pour un total de "<<CARRE(nbrePointsCote)<<" points.");
+
+		if(pointsPrincipaux==nullptr)
+		{
+			//Durant cette première phase, nous créons les quatres sommets de base du chunk
+			chunkPoints[0][0]=							RAND(-amplitude, amplitude);
+			chunkPoints[nbrePointsCote][0]=				RAND(-amplitude, amplitude);
+			chunkPoints[0][nbrePointsCote]=				RAND(-amplitude, amplitude);
+			chunkPoints[nbrePointsCote][nbrePointsCote]=RAND(-amplitude, amplitude);
+		}
+		else
+		{
+			chunkPoints[0][0]=							pointsPrincipaux->at(0);
+			chunkPoints[nbrePointsCote][0]=				pointsPrincipaux->at(1);
+			chunkPoints[0][nbrePointsCote]=				pointsPrincipaux->at(2);
+			chunkPoints[nbrePointsCote][nbrePointsCote]=pointsPrincipaux->at(3);
+		}
+		if(subDivisions==0)
+			return chunkPoints;
+
+
+		float moyennePointsEnvironnants;//cette variable fait la [explicite] en utilisant le point de traitement actuel comme base.
+        for(uint c=1; c!=subDivisions+1; ++c)
         {
-            if(lambdaDiamsPermTable==nullptr){
-                lambdaDiamsPermTable=new DiamondPermTable;
-                genPermTable(&lambdaDiamsPermTable->permPermTable, seed);
-                genPermTable(&lambdaDiamsPermTable->permTable, seed);
-            }
-            perm=lambdaDiamsPermTable;
-        }
+			//Il y a deux phases par subdivisions: d'abors la division carrée, puis la division diamond
+			uint nbrePointsActuels=pow(2, c)+1;
+			uint pas=nbrPtsCotePaire/(nbrePointsActuels-1);
 
-        if(!DIVISIBLE_PAR(tailleArray, 2.f))
-                CRITIC_ERROR("7::: Diamond square noise: vouss nous avez donné une taille  on multiple de 2! chalauds!");
+			//Di d=0; alors c'est la division carrée, sinon c'est la division diamond
+			for(char d=1; d!=-1; --d)
+			{
+				bool i=1;
+				for(uint y=0; y!=nbrePointsActuels; ++y, ++i)
+				{
+					for(uint x=i/2; x!=nbrePointsActuels; ++x)
+					{
+						moyennePointsEnvironnants=0;
 
-        for(int c=0; c!=tailleArray; c++)
-        {
+						point2Dui position(pas/2*d+ x*pas, pas/2*d+ y*pas);
+						//Ici, on fait la moyenne des points environnants, puis on exécute l'opération pour définir la nouvelle hauteur du point
+						vector<float> v=getPositionsAround(&chunkPoints, position, pas, pointsEnvironnants, d);
+						for(uint c=0; c!=v.size(); ++c)
+							moyennePointsEnvironnants+=v[c];
+						moyennePointsEnvironnants/=v.size();
 
-        }
-        //return 0;
+						chunkPoints[position.x][position.y] = (float)RAND(-amplitude, amplitude) / ((float)c*1.f/res) * (float)amplitude  + moyennePointsEnvironnants;
+					}
+					if(i == true)
+						i=false;
+				}
+			}
+		}
+
+        return chunkPoints;
     }
 
     /**

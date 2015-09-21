@@ -87,6 +87,7 @@ std::vector<std::string> getFileWithSthx(std::ifstream &flux, unsigned int nbreM
 namespace Unoise
 {
     typedef std::array<unsigned short, 256> PermTable;
+    typedef std::vector<std::vector<float>> ChunkPoints;
 
     ///Stock a PermTable "Diamond"
     struct DiamondPermTable
@@ -107,8 +108,9 @@ namespace Unoise
     float perlinNoise(float x, float z, float res, PermTable* perm=nullptr);
 
     ///Midpoint displacement noise, ou Diamond square noise (nom latin: carrus diamus)
-    std::vector<std::vector<float>> DiamondSquareNoiseChunk(float x, float y, float res, ushort tailleArray=10, DiamondPermTable* perm=nullptr);
+    ChunkPoints diamondSquareNoise(float x, float y, int amplitude, float res, unsigned short subDivisions, int nseed=-1, std::array<float, 4>* pointsPrincipaux=nullptr, std::array<std::vector<float>, 4>* pointsEnvironnants=nullptr);
 }
 
 #endif // UTILITIES_H_INCLUDED
+
 
