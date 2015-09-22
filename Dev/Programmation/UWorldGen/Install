@@ -1,0 +1,3 @@
+For installing worldgen, just follow the instructions here for installing the only worldgen dependency, python-sfml: http://www.python-sfml.org/download.html#ubuntu
+
+Then, just make sure that UWorldGen is in a working version, and enjoy.

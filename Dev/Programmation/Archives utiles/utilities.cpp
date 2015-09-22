@@ -207,8 +207,8 @@ namespace Unoise
     ///\param amplitude La hauteur maximale d'un point (la valeur minimale est l'opposée de l'amplitude
     ///\param res La résolution, c'est à dire la rapidité de la réduction du bruit
     ///\param subDivisions Le nombre de subdivisions appliqués, pour trouver le nombre de points par coté ça fait, calculez: pow(2, subDivisions)+1
-   ChunkPoints diamondSquareNoise(float x, float y, int amplitude, float res, ushort subDivisions, int nseed, std::array<float, 4>* pointsPrincipaux, std::array<std::vector<float>, 4>* pointsEnvironnants)
-    {
+	 ChunkPoints diamondSquareNoise(float x, float y, int amplitude, float res, ushort subDivisions, int nseed, std::array<float, 4>* pointsPrincipaux, std::array<std::vector<float>, 4>* pointsEnvironnants)
+	{
 		if(seed<0)
 			seed=nseed;
 		ChunkPoints chunkPoints;//le tableau qui contient tous les nouveaux points du chunk
@@ -216,8 +216,8 @@ namespace Unoise
 		uint nbrePointsCote=pow(2, subDivisions)+1;
 		#define nbrPtsCotePaire (nbrePointsCote-1) //Utile dans de nombreux calculs où nous n'avons pas besoins de prendre en compte le point qui viens fermer le bord
 
-        chunkPoints.resize(nbrePointsCote);
-        for(uint c=0; c!=nbrePointsCote; c++)
+		chunkPoints.resize(nbrePointsCote);
+		for(uint c=0; c!=nbrePointsCote; c++)
 			chunkPoints[c].resize(nbrePointsCote);
 
 		//On teste si le paramètre pointsenvironnants est correctement initialisé
@@ -255,8 +255,8 @@ namespace Unoise
 
 
 		float moyennePointsEnvironnants;//cette variable fait la [explicite] en utilisant le point de traitement actuel comme base.
-        for(uint c=1; c!=subDivisions+1; ++c)
-        {
+		for(uint c=1; c!=subDivisions+1; ++c)
+		{
 			//Il y a deux phases par subdivisions: d'abors la division carrée, puis la division diamond
 			uint nbrePointsActuels=pow(2, c)+1;
 			uint pas=nbrPtsCotePaire/(nbrePointsActuels-1);
