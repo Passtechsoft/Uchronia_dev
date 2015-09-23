@@ -2,8 +2,33 @@
 #include <math.h>
 #include <cstdlib>
 
-long cutDizL(const long& l){
-    return l/(10*(long)(l/10));
+
+//La multimap stockera les classes par nom, puis s'en suit une map de pointeur sur types variables qui donnent sur le nombre d'allocations désalocs.
+CompteurClasseType compteurClasses;
+std::map<void *, int> *getCptClass(std::string &nom)
+{
+	return &compteurClasses[nom];
+}
+
+void affPtrFlag()
+{
+	std::vector<std::pair<CompteurClasseType, std::map<void *, int> > > v;
+	for (std::map<string, std::map<void *, int> >::iterator it = compteurClasse.begin(); it != compteurClasses.end; it++) {
+		for(std::map<void *, int> >::iterator ite = it->second.begin; ite != it->second.end(); ite++) {
+			if(ite->second != 0)
+				v.push_back(it, ite);
+		}
+	}
+	
+	if (v.size() > 0)
+		DEBUG("Attention! Les classes suivantes contiennent des fuites de mémoires!");
+	
+	for (unsigned int c = 0; c != v.size(); ++c)
+		Debug("		L'instance " << v[c]->second.first << " de la classe " << v[c]->first.first << " possède " <<v[c]->second.second " fuites mémoires.");
+}
+
+long cutDizL(const long& l, uint nbIntegrers){
+    return ;
 }
 
 namespace Uchronia{class ZChunk;}

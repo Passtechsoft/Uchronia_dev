@@ -58,20 +58,30 @@
 
 #define ISPOSITIVE(number) (number>=0)
 
+///Cette fonction ne garde qu'un certain nombre de chiffres de la partie entière
+#define cutDiz(nombre_, nbIntegrers_) (nombre_/(10*(long)((nombre_/10)*pow(10, nbIntegrers_)))
+
 #define DIVISIBLE_PAR(nbre, diviseur) (nbre/((float)diviseur)==(short)nbre/diviseur)
 //Utile dans les cas de tests ou on aimerait obtenir un int tel que jamais un utilisateur n'oserais le taper
 #define INT_IMPROBABLE 4294967295
 
+
+typedef std::map<std::string, std::map<void*, int> > CompteurClasseType;
 typedef unsigned char oct_e;//Rest In Pieces :_{
 typedef unsigned char uchar;
 typedef unsigned short ushort;
+
+std::map<void *, int> *getCptClass(std::string &nom);
+
+#define ptrFlagInc(nomclasse, ptrClasse) compteurClasses[nomclasse].at(ptrClasse) += 1
+#define ptrFlagDec(nomclasse, ptrClasse) compteurClasses[nomclasse].at(ptrClasse) -= 1
+void affPtrFlag();
+
 
 ///Permet de tester une certaine probabilité
 bool probability(int prob, int sur);
 ///Renvoie le nombre en positif
 float positif(int a);
-///Cette fonction ne garde que les chiffres des unitées
-long cutDizL(const long& l);
 ///Donne le mot n°\a word_num dans la chaine chaine, à noter que word_num commence par 0;
 std::string getWord(ushort word_num, std::string &chaine);
 ///\return true si \a subWord est dans \a word
