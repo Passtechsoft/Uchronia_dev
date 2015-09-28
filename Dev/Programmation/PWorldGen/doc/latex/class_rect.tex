@@ -1,0 +1,330 @@
+\hypertarget{class_rect}{\section{Rect Class Reference}
+\label{class_rect}\index{Rect@{Rect}}
+}
+
+
+{\ttfamily \#include $<$rect.\-h$>$}
+
+
+
+Inheritance diagram for Rect\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_rect__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rect_a911e531b86de33734dd7de3456722115}{Rect} ()
+\item 
+\hyperlink{class_rect_ac039884b92bbdee68f7162036dfaefde}{Rect} (float rect\-Left, float rect\-Top, float rect\-Width, float rect\-Height)
+\item 
+\hyperlink{class_rect_aba3faa70ac657c788232b35719634196}{Rect} (const sf\-::\-Vector2f \&position, const sf\-::\-Vector2f \&size)
+\item 
+\hyperlink{class_rect_ac27e3c442eca764a0adbfbce7ecd679b}{Rect} (const \hyperlink{class_rect}{Rect} \&rectangle)
+\item 
+bool \hyperlink{class_rect_a4d0518ea473db46452c25044a95427ad}{contains} (float x, float y) const 
+\item 
+bool \hyperlink{class_rect_a98fe180ce28319ff319de5ab97fcc14c}{contains} (const sf\-::\-Vector2f \&point) const 
+\item 
+bool \hyperlink{class_rect_a77ef59c0903b538039bfeb3f4f03e198}{intersects} (const \hyperlink{class_rect}{Rect} \&rectangle) const 
+\item 
+bool \hyperlink{class_rect_a494a972edd829cb586333dfdd9c50b0a}{intersects} (const \hyperlink{class_rect}{Rect} \&rectangle, \hyperlink{class_rect}{Rect} \&intersection) const 
+\item 
+\hyperlink{class_public_rect}{Public\-Rect} \hyperlink{class_rect_a13d9cb2506258eda3787905452a9e7a3}{get\-Rect} ()
+\item 
+void \hyperlink{class_rect_a9c289437abe60bbb455c1b494a15eac3}{set\-Zone} (float new\-Pos\-X, float new\-Pos\-Y, float new\-Width=0, float new\-Height=0)
+\item 
+void \hyperlink{class_rect_ae4da133b058b25385e616496a0d35cc4}{set\-Width\-Height} (float new\-Width, float new\-Height)
+\item 
+void \hyperlink{class_rect_a7e6fca19d0ce00e318775d37631e2e0d}{set\-Position} (float new\-Pos\-X, float new\-Pos\-Y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_rect_aee32c031336a50f77c6cf882053e89f9}{m\-\_\-pos\-X}
+\item 
+float \hyperlink{class_rect_a10680ccabe0068eda6c9637aa6eeb2fd}{m\-\_\-pos\-Y}
+\item 
+float \hyperlink{class_rect_a2c4d58cb6e4d113e486913f62f47b558}{m\-\_\-width}
+\item 
+float \hyperlink{class_rect_a1cec6187b299195fd06daef55e6a96f1}{m\-\_\-height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file rect.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rect_a911e531b86de33734dd7de3456722115}{\index{Rect@{Rect}!Rect@{Rect}}
+\index{Rect@{Rect}!Rect@{Rect}}
+\subsubsection[{Rect}]{\setlength{\rightskip}{0pt plus 5cm}Rect\-::\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rect_a911e531b86de33734dd7de3456722115}
+
+
+Definition at line 3 of file rect.\-cpp.
+
+
+
+Referenced by intersects().
+
+\hypertarget{class_rect_ac039884b92bbdee68f7162036dfaefde}{\index{Rect@{Rect}!Rect@{Rect}}
+\index{Rect@{Rect}!Rect@{Rect}}
+\subsubsection[{Rect}]{\setlength{\rightskip}{0pt plus 5cm}Rect\-::\-Rect (
+\begin{DoxyParamCaption}
+\item[{float}]{rect\-Left, }
+\item[{float}]{rect\-Top, }
+\item[{float}]{rect\-Width, }
+\item[{float}]{rect\-Height}
+\end{DoxyParamCaption}
+)}}\label{class_rect_ac039884b92bbdee68f7162036dfaefde}
+
+
+Definition at line 13 of file rect.\-cpp.
+
+\hypertarget{class_rect_aba3faa70ac657c788232b35719634196}{\index{Rect@{Rect}!Rect@{Rect}}
+\index{Rect@{Rect}!Rect@{Rect}}
+\subsubsection[{Rect}]{\setlength{\rightskip}{0pt plus 5cm}Rect\-::\-Rect (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2f \&}]{position, }
+\item[{const sf\-::\-Vector2f \&}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_rect_aba3faa70ac657c788232b35719634196}
+
+
+Definition at line 23 of file rect.\-cpp.
+
+\hypertarget{class_rect_ac27e3c442eca764a0adbfbce7ecd679b}{\index{Rect@{Rect}!Rect@{Rect}}
+\index{Rect@{Rect}!Rect@{Rect}}
+\subsubsection[{Rect}]{\setlength{\rightskip}{0pt plus 5cm}Rect\-::\-Rect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} \&}]{rectangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_rect_ac27e3c442eca764a0adbfbce7ecd679b}
+
+
+Definition at line 33 of file rect.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rect_a4d0518ea473db46452c25044a95427ad}{\index{Rect@{Rect}!contains@{contains}}
+\index{contains@{contains}!Rect@{Rect}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool Rect\-::contains (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_rect_a4d0518ea473db46452c25044a95427ad}
+
+
+Definition at line 42 of file rect.\-cpp.
+
+
+
+Referenced by contains().
+
+\hypertarget{class_rect_a98fe180ce28319ff319de5ab97fcc14c}{\index{Rect@{Rect}!contains@{contains}}
+\index{contains@{contains}!Rect@{Rect}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool Rect\-::contains (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2f \&}]{point}
+\end{DoxyParamCaption}
+) const}}\label{class_rect_a98fe180ce28319ff319de5ab97fcc14c}
+
+
+Definition at line 56 of file rect.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_rect_a98fe180ce28319ff319de5ab97fcc14c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_rect_a13d9cb2506258eda3787905452a9e7a3}{\index{Rect@{Rect}!get\-Rect@{get\-Rect}}
+\index{get\-Rect@{get\-Rect}!Rect@{Rect}}
+\subsubsection[{get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Public\-Rect} Rect\-::get\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rect_a13d9cb2506258eda3787905452a9e7a3}
+
+
+Definition at line 68 of file rect.\-cpp.
+
+
+
+Referenced by operator==().
+
+\hypertarget{class_rect_a77ef59c0903b538039bfeb3f4f03e198}{\index{Rect@{Rect}!intersects@{intersects}}
+\index{intersects@{intersects}!Rect@{Rect}}
+\subsubsection[{intersects}]{\setlength{\rightskip}{0pt plus 5cm}bool Rect\-::intersects (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} \&}]{rectangle}
+\end{DoxyParamCaption}
+) const}}\label{class_rect_a77ef59c0903b538039bfeb3f4f03e198}
+
+
+Definition at line 62 of file rect.\-cpp.
+
+\hypertarget{class_rect_a494a972edd829cb586333dfdd9c50b0a}{\index{Rect@{Rect}!intersects@{intersects}}
+\index{intersects@{intersects}!Rect@{Rect}}
+\subsubsection[{intersects}]{\setlength{\rightskip}{0pt plus 5cm}bool Rect\-::intersects (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} \&}]{rectangle, }
+\item[{{\bf Rect} \&}]{intersection}
+\end{DoxyParamCaption}
+) const}}\label{class_rect_a494a972edd829cb586333dfdd9c50b0a}
+
+
+Definition at line 73 of file rect.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_rect_a494a972edd829cb586333dfdd9c50b0a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_rect_a7e6fca19d0ce00e318775d37631e2e0d}{\index{Rect@{Rect}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Rect@{Rect}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Rect\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{float}]{new\-Pos\-X, }
+\item[{float}]{new\-Pos\-Y}
+\end{DoxyParamCaption}
+)}}\label{class_rect_a7e6fca19d0ce00e318775d37631e2e0d}
+
+
+Definition at line 119 of file rect.\-cpp.
+
+
+
+Referenced by Player\-::actualiser(), and Visual\-Effect\-::operator()().
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_rect_a7e6fca19d0ce00e318775d37631e2e0d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_rect_ae4da133b058b25385e616496a0d35cc4}{\index{Rect@{Rect}!set\-Width\-Height@{set\-Width\-Height}}
+\index{set\-Width\-Height@{set\-Width\-Height}!Rect@{Rect}}
+\subsubsection[{set\-Width\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Rect\-::set\-Width\-Height (
+\begin{DoxyParamCaption}
+\item[{float}]{new\-Width, }
+\item[{float}]{new\-Height}
+\end{DoxyParamCaption}
+)}}\label{class_rect_ae4da133b058b25385e616496a0d35cc4}
+
+
+Definition at line 124 of file rect.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_rect_ae4da133b058b25385e616496a0d35cc4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_rect_a9c289437abe60bbb455c1b494a15eac3}{\index{Rect@{Rect}!set\-Zone@{set\-Zone}}
+\index{set\-Zone@{set\-Zone}!Rect@{Rect}}
+\subsubsection[{set\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}void Rect\-::set\-Zone (
+\begin{DoxyParamCaption}
+\item[{float}]{new\-Pos\-X, }
+\item[{float}]{new\-Pos\-Y, }
+\item[{float}]{new\-Width = {\ttfamily 0}, }
+\item[{float}]{new\-Height = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_rect_a9c289437abe60bbb455c1b494a15eac3}
+\begin{DoxyNote}{Note}
+Check 1 
+\end{DoxyNote}
+
+
+Definition at line 109 of file rect.\-cpp.
+
+
+
+Referenced by set\-Position(), and set\-Width\-Height().
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_rect_a1cec6187b299195fd06daef55e6a96f1}{\index{Rect@{Rect}!m\-\_\-height@{m\-\_\-height}}
+\index{m\-\_\-height@{m\-\_\-height}!Rect@{Rect}}
+\subsubsection[{m\-\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}float Rect\-::m\-\_\-height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_rect_a1cec6187b299195fd06daef55e6a96f1}
+
+
+Definition at line 51 of file rect.\-h.
+
+
+
+Referenced by Player\-::actualiser(), Window\-Entity\-::actuate\-Sprite(), contains(), get\-Rect(), intersects(), Button\-::is\-Pressed(), Player\-::\-Player(), Window\-Entity\-::set\-Zone(), set\-Zone(), and Visual\-Effect\-::\-Visual\-Effect().
+
+\hypertarget{class_rect_aee32c031336a50f77c6cf882053e89f9}{\index{Rect@{Rect}!m\-\_\-pos\-X@{m\-\_\-pos\-X}}
+\index{m\-\_\-pos\-X@{m\-\_\-pos\-X}!Rect@{Rect}}
+\subsubsection[{m\-\_\-pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}float Rect\-::m\-\_\-pos\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_rect_aee32c031336a50f77c6cf882053e89f9}
+
+
+Definition at line 48 of file rect.\-h.
+
+
+
+Referenced by Player\-::actualiser(), Window\-Entity\-::actuate\-Sprite(), contains(), get\-Rect(), intersects(), Button\-::is\-Pressed(), Visual\-Effect\-::operator()(), Player\-::\-Player(), set\-Width\-Height(), Window\-Entity\-::set\-Zone(), set\-Zone(), and Visual\-Effect\-::\-Visual\-Effect().
+
+\hypertarget{class_rect_a10680ccabe0068eda6c9637aa6eeb2fd}{\index{Rect@{Rect}!m\-\_\-pos\-Y@{m\-\_\-pos\-Y}}
+\index{m\-\_\-pos\-Y@{m\-\_\-pos\-Y}!Rect@{Rect}}
+\subsubsection[{m\-\_\-pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float Rect\-::m\-\_\-pos\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_rect_a10680ccabe0068eda6c9637aa6eeb2fd}
+
+
+Definition at line 49 of file rect.\-h.
+
+
+
+Referenced by Player\-::actualiser(), Window\-Entity\-::actuate\-Sprite(), contains(), get\-Rect(), intersects(), Button\-::is\-Pressed(), Visual\-Effect\-::operator()(), Player\-::\-Player(), set\-Width\-Height(), Window\-Entity\-::set\-Zone(), set\-Zone(), and Visual\-Effect\-::\-Visual\-Effect().
+
+\hypertarget{class_rect_a2c4d58cb6e4d113e486913f62f47b558}{\index{Rect@{Rect}!m\-\_\-width@{m\-\_\-width}}
+\index{m\-\_\-width@{m\-\_\-width}!Rect@{Rect}}
+\subsubsection[{m\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}float Rect\-::m\-\_\-width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_rect_a2c4d58cb6e4d113e486913f62f47b558}
+
+
+Definition at line 50 of file rect.\-h.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite(), contains(), get\-Rect(), intersects(), Button\-::is\-Pressed(), Player\-::\-Player(), Window\-Entity\-::set\-Zone(), set\-Zone(), and Visual\-Effect\-::\-Visual\-Effect().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-General/\hyperlink{rect_8h}{rect.\-h}\item 
+src/\-General/\hyperlink{rect_8cpp}{rect.\-cpp}\end{DoxyCompactItemize}

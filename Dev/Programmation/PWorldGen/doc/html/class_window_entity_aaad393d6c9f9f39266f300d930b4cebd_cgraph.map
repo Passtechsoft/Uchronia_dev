@@ -1,0 +1,8 @@
+<map id="WindowEntity::addTexture" name="WindowEntity::addTexture">
+<area shape="rect" id="node2" href="$class_texture_list.html#ab97506e3c31990bf341103d1d4589829" title="TextureList::getGeneralTextureList" alt="" coords="230,5,453,32"/>
+<area shape="rect" id="node3" href="$class_texture_list.html#a27e768ab0f66150d4b45b5d4d0f08e4b" title="TextureList::getTexture" alt="" coords="263,56,420,83"/>
+<area shape="rect" id="node4" href="$class_window_entity.html#a0f0f574a7c5ceb5abbe939388fbb86d8" title="WindowEntity::actuateSprite" alt="" coords="247,107,435,133"/>
+<area shape="rect" id="node5" href="$class_sprite_list.html#a31aad8d098174638df4d85fae19d9176" title="SpriteList::getGeneralSpriteList" alt="" coords="501,56,704,83"/>
+<area shape="rect" id="node6" href="$class_sprite_list.html#a1f9cb9cef32d7b73e83539a8fc84c05d" title="SpriteList::AddSprite" alt="" coords="531,107,674,133"/>
+<area shape="rect" id="node7" href="$class_window_entity.html#afc0ddfdb22e1032751913af734025f2c" title="WindowEntity::setZone" alt="" coords="523,157,682,184"/>
+</map>

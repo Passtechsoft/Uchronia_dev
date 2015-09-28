@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_rect.html" title="Rect" alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$class_window_entity.html" title="WindowEntity" alt="" coords="105,56,207,83"/>
+<area shape="rect" id="node3" href="$class_button.html" title="The Button class is a simple UI element that does exactly what it mean. " alt="" coords="273,5,333,32"/>
+<area shape="rect" id="node4" href="$class_entity.html" title="Entity" alt="" coords="275,56,331,83"/>
+<area shape="rect" id="node6" href="$class_visual_effect.html" title="Une classe gérant effet visuel temporaire. " alt="" coords="256,107,349,133"/>
+<area shape="rect" id="node5" href="$class_player.html" title="Player" alt="" coords="413,56,472,83"/>
+<area shape="rect" id="node7" href="$class_space_laser.html" title="Cette classe ressemble en tout points à VisualEffect mis à part un construxteur légèrement différent..." alt="" coords="397,107,488,133"/>
+</map>

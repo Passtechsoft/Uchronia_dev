@@ -1,0 +1,8 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$class_entity.html" title="Entity" alt="" coords="143,224,197,251"/>
+<area shape="rect" id="node3" href="$class_window_entity.html" title="WindowEntity" alt="" coords="101,83,203,109"/>
+<area shape="rect" id="node6" href="$class_visual_effect.html" title="Une classe gérant effet visuel temporaire. " alt="" coords="41,173,135,200"/>
+<area shape="rect" id="node4" href="$class_rect.html" title="Rect" alt="" coords="127,5,177,32"/>
+<area shape="rect" id="node5" href="$class_space_laser.html" title="Cette classe ressemble en tout points à VisualEffect mis à part un construxteur légèrement différent..." alt="" coords="43,275,133,301"/>
+<area shape="rect" id="node7" href="$class_timer.html" title="Timer" alt="" coords="15,83,69,109"/>
+</map>

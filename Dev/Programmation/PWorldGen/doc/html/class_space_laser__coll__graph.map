@@ -1,0 +1,6 @@
+<map id="SpaceLaser" name="SpaceLaser">
+<area shape="rect" id="node2" href="$class_visual_effect.html" title="Une classe gérant effet visuel temporaire. " alt="" coords="68,173,161,200"/>
+<area shape="rect" id="node3" href="$class_window_entity.html" title="WindowEntity" alt="" coords="5,83,107,109"/>
+<area shape="rect" id="node4" href="$class_rect.html" title="Rect" alt="" coords="31,5,81,32"/>
+<area shape="rect" id="node5" href="$class_timer.html" title="Timer" alt="" coords="131,83,185,109"/>
+</map>

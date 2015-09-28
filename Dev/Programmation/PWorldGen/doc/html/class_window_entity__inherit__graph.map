@@ -1,0 +1,8 @@
+<map id="WindowEntity" name="WindowEntity">
+<area shape="rect" id="node3" href="$class_button.html" title="The Button class is a simple UI element that does exactly what it mean. " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node4" href="$class_entity.html" title="Entity" alt="" coords="89,155,144,181"/>
+<area shape="rect" id="node6" href="$class_visual_effect.html" title="Une classe gérant effet visuel temporaire. " alt="" coords="169,155,263,181"/>
+<area shape="rect" id="node2" href="$class_rect.html" title="Rect" alt="" coords="92,5,143,32"/>
+<area shape="rect" id="node5" href="$class_player.html" title="Player" alt="" coords="88,229,145,256"/>
+<area shape="rect" id="node7" href="$class_space_laser.html" title="Cette classe ressemble en tout points à VisualEffect mis à part un construxteur légèrement différent..." alt="" coords="171,229,261,256"/>
+</map>

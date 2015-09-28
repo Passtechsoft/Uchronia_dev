@@ -1,0 +1,13 @@
+<map id="NtsaWindow::actualize" name="NtsaWindow::actualize">
+<area shape="rect" id="node2" href="$class_entity.html#a0f563cb7a800d95e7b8f2c030f9435f4" title="Entity::moveSomewere" alt="" coords="233,5,391,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a2e553246efacb426f0806faf59b017e7" title="Entity::stabilize" alt="" coords="256,56,368,83"/>
+<area shape="rect" id="node4" href="$class_entity.html#a4b8c151c2e5f7337b4cf74df6ccc62f5" title="Entity::stopAcceleration" alt="" coords="231,107,393,133"/>
+<area shape="rect" id="node5" href="$class_ntsa_window.html#ab0b4de4b43e6aa20fc96fbcc0805bad1" title="NtsaWindow::doAction" alt="" coords="234,157,390,184"/>
+<area shape="rect" id="node6" href="$class_player.html#a4297433163d2c6b6a82b5d71c5362466" title="Player::actualiser" alt="" coords="251,208,373,235"/>
+<area shape="rect" id="node11" href="$class_sprite_list.html#a31aad8d098174638df4d85fae19d9176" title="SpriteList::getGeneralSpriteList" alt="" coords="211,259,413,285"/>
+<area shape="rect" id="node12" href="$class_sprite_list.html#a231c6090b04c2b0ba261f9ce5e3d1f1c" title="SpriteList::getPriorityMap" alt="" coords="227,309,397,336"/>
+<area shape="rect" id="node7" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Restart le timer uniquement la première fois ou quand stop a été appelé juste avant. " alt="" coords="491,157,581,184"/>
+<area shape="rect" id="node8" href="$class_ntsa_window.html#a8504a8160e6c88968662c55ea4587f6c" title="NtsaWindow::getSize" alt="" coords="461,208,611,235"/>
+<area shape="rect" id="node9" href="$class_rect.html#a7e6fca19d0ce00e318775d37631e2e0d" title="Rect::setPosition" alt="" coords="475,259,597,285"/>
+<area shape="rect" id="node10" href="$class_rect.html#a9c289437abe60bbb455c1b494a15eac3" title="Rect::setZone" alt="" coords="659,259,765,285"/>
+</map>

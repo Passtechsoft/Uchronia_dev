@@ -1,0 +1,117 @@
+\hypertarget{class_timer}{\section{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+}
+
+
+{\ttfamily \#include $<$general.\-h$>$}
+
+
+
+Inheritance diagram for Timer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{class_timer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Timer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{class_timer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\item 
+void \hyperlink{class_timer_a3a8b5272198d029779dc9302a54305a8}{start} ()
+\begin{DoxyCompactList}\small\item\em Restart le timer uniquement la première fois ou quand stop a été appelé juste avant. \end{DoxyCompactList}\item 
+void \hyperlink{class_timer_a63f0eb44b27402196590a03781515dba}{stop} ()
+\begin{DoxyCompactList}\small\item\em Permet un nouvel appel à start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_timer_ab82f1b382db2231bf358bb6ec5dbe45d}{m\-\_\-started} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file general.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Timer\-::\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_timer_a5f16e8da27d2a5a5242dead46de05d97}
+
+
+Definition at line 17 of file general.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_timer_a3a8b5272198d029779dc9302a54305a8}{\index{Timer@{Timer}!start@{start}}
+\index{start@{start}!Timer@{Timer}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_a3a8b5272198d029779dc9302a54305a8}
+
+
+Restart le timer uniquement la première fois ou quand stop a été appelé juste avant. 
+
+
+
+Definition at line 137 of file general.\-cpp.
+
+
+
+Referenced by Player\-::actualiser().
+
+\hypertarget{class_timer_a63f0eb44b27402196590a03781515dba}{\index{Timer@{Timer}!stop@{stop}}
+\index{stop@{stop}!Timer@{Timer}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_a63f0eb44b27402196590a03781515dba}
+
+
+Permet un nouvel appel à start. 
+
+
+
+Definition at line 146 of file general.\-cpp.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_timer_ab82f1b382db2231bf358bb6ec5dbe45d}{\index{Timer@{Timer}!m\-\_\-started@{m\-\_\-started}}
+\index{m\-\_\-started@{m\-\_\-started}!Timer@{Timer}}
+\subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}bool Timer\-::m\-\_\-started =false\hspace{0.3cm}{\ttfamily [private]}}}\label{class_timer_ab82f1b382db2231bf358bb6ec5dbe45d}
+
+
+Definition at line 23 of file general.\-h.
+
+
+
+Referenced by start(), and stop().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-General/\hyperlink{general_8h}{general.\-h}\item 
+src/\-General/\hyperlink{general_8cpp}{general.\-cpp}\end{DoxyCompactItemize}

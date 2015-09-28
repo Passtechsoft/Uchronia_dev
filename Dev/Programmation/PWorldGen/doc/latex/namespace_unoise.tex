@@ -1,0 +1,292 @@
+\hypertarget{namespace_unoise}{\section{Unoise Namespace Reference}
+\label{namespace_unoise}\index{Unoise@{Unoise}}
+}
+
+
+\hyperlink{namespace_uchronia}{Uchronia} noise namespace.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unoise_1_1point2_dui}{point2\-Dui}
+\item 
+struct \hyperlink{struct_unoise_1_1_diamond_perm_table}{Diamond\-Perm\-Table}
+\begin{DoxyCompactList}\small\item\em Stock a Perm\-Table \char`\"{}\-Diamond\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::array$<$ unsigned \\*
+short, 256 $>$ \hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Perm\-Table}
+\item 
+typedef std\-::vector\\*
+$<$ std\-::vector$<$ float $>$ $>$ \hyperlink{namespace_unoise_ac1e5c6227ab68e4e8c1ad57fdbddf51b}{Chunk\-Points}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}{set\-Seed} (int graine)
+\item 
+void \hyperlink{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}{set\-Perm\-Table} (\hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Perm\-Table} $\ast$perm)
+\begin{DoxyCompactList}\small\item\em Pas obligatoire, cette fonction permet de changer lambda\-Perm\-Table. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}{gen\-Perm\-Table} (\hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Perm\-Table} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em On génère la table de permutation à partir d'un seed. \end{DoxyCompactList}\item 
+std\-::vector$<$ float $>$ \hyperlink{namespace_unoise_aa685d2a385bbfe1a71a1650004238202}{get\-Positions\-Around} (\hyperlink{namespace_unoise_ac1e5c6227ab68e4e8c1ad57fdbddf51b}{Chunk\-Points} $\ast$tableau, \hyperlink{struct_unoise_1_1point2_dui}{point2\-Dui} point, int pas, std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$points\-Environnants=nullptr, bool phase=1)
+\item 
+\hyperlink{namespace_unoise_ac1e5c6227ab68e4e8c1ad57fdbddf51b}{Chunk\-Points} \hyperlink{namespace_unoise_accabbc2fce05f7a55bd10ec573925275}{diamond\-Square\-Noise} (float x, float y, int amplitude, float res, unsigned short sub\-Divisions, int nseed=-\/1, std\-::array$<$ float, 4 $>$ $\ast$points\-Principaux=nullptr, std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$points\-Environnants=nullptr)
+\begin{DoxyCompactList}\small\item\em Midpoint displacement noise, ou Diamond square noise (nom latin\-: carrus diamus) \end{DoxyCompactList}\item 
+float \hyperlink{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}{perlin\-Noise} (float x, float z, float res, \hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Perm\-Table} $\ast$perm=nullptr)
+\begin{DoxyCompactList}\small\item\em Fonction du bruit de perlin (float x, float z, float resolution, table de permutation)\-: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Perm\-Table} $\ast$ \hyperlink{namespace_unoise_acf4515c07424188371eeb9cf77d34fb3}{lambda\-Perm\-Table} =nullptr
+\item 
+int \hyperlink{namespace_unoise_ae6356ffd0fec247f6d19c762e1757fc3}{seed} =42
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_uchronia}{Uchronia} noise namespace. 
+
+\subsection{Typedef Documentation}
+\hypertarget{namespace_unoise_ac1e5c6227ab68e4e8c1ad57fdbddf51b}{\index{Unoise@{Unoise}!Chunk\-Points@{Chunk\-Points}}
+\index{Chunk\-Points@{Chunk\-Points}!Unoise@{Unoise}}
+\subsubsection[{Chunk\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<$std\-::vector$<$float$>$ $>$ {\bf Unoise\-::\-Chunk\-Points}}}\label{namespace_unoise_ac1e5c6227ab68e4e8c1ad57fdbddf51b}
+
+
+Definition at line 100 of file utilities.\-h.
+
+\hypertarget{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{\index{Unoise@{Unoise}!Perm\-Table@{Perm\-Table}}
+\index{Perm\-Table@{Perm\-Table}!Unoise@{Unoise}}
+\subsubsection[{Perm\-Table}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::array$<$unsigned short, 256$>$ {\bf Unoise\-::\-Perm\-Table}}}\label{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}
+
+
+Definition at line 99 of file utilities.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_unoise_accabbc2fce05f7a55bd10ec573925275}{\index{Unoise@{Unoise}!diamond\-Square\-Noise@{diamond\-Square\-Noise}}
+\index{diamond\-Square\-Noise@{diamond\-Square\-Noise}!Unoise@{Unoise}}
+\subsubsection[{diamond\-Square\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk\-Points} Unoise\-::diamond\-Square\-Noise (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{int}]{amplitude, }
+\item[{float}]{res, }
+\item[{{\bf ushort}}]{sub\-Divisions, }
+\item[{int}]{nseed, }
+\item[{std\-::array$<$ float, 4 $>$ $\ast$}]{points\-Principaux, }
+\item[{std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$}]{points\-Environnants}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_accabbc2fce05f7a55bd10ec573925275}
+
+
+Midpoint displacement noise, ou Diamond square noise (nom latin\-: carrus diamus) 
+
+Cet algo génère sur une zone memoire donnée un bruit de type midpoint displacement \begin{DoxyNote}{Note}
+Vous trouverez des informations sur le fonctionnement interne de cette fonction dans le fichier algoinfos rubrique diamond\-Square\-Noise 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Il est interdit de mettre pos à 1 ou à 0, car ça signifierait que le nombre de point par coté vaut 2 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & La position du chunk virtuelle X, inutile dans les versions primitives de la fonction \\
+\hline
+{\em y} & La position du chunk virtuelle Y, inutile dans les versions primitives de la fonction \\
+\hline
+{\em amplitude} & La hauteur maximale d'un point (la valeur minimale est l'opposée de l'amplitude \\
+\hline
+{\em res} & La résolution, c'est à dire la rapidité de la réduction du bruit \\
+\hline
+{\em sub\-Divisions} & Le nombre de subdivisions appliqués, pour trouver le nombre de points par coté ça fait, calculez\-: pow(2, sub\-Divisions)+1 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file utilities.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_unoise_accabbc2fce05f7a55bd10ec573925275_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}{\index{Unoise@{Unoise}!gen\-Perm\-Table@{gen\-Perm\-Table}}
+\index{gen\-Perm\-Table@{gen\-Perm\-Table}!Unoise@{Unoise}}
+\subsubsection[{gen\-Perm\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Unoise\-::gen\-Perm\-Table (
+\begin{DoxyParamCaption}
+\item[{Perm\-Table $\ast$}]{pttable, }
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}
+
+
+On génère la table de permutation à partir d'un seed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pttable} & pointeur via une table de permutation qui sera générée avec le seed \\
+\hline
+{\em seed} & le seed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 130 of file utilities.\-cpp.
+
+
+
+Referenced by perlin\-Noise().
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_unoise_aa685d2a385bbfe1a71a1650004238202}{\index{Unoise@{Unoise}!get\-Positions\-Around@{get\-Positions\-Around}}
+\index{get\-Positions\-Around@{get\-Positions\-Around}!Unoise@{Unoise}}
+\subsubsection[{get\-Positions\-Around}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$ Unoise\-::get\-Positions\-Around (
+\begin{DoxyParamCaption}
+\item[{Chunk\-Points $\ast$}]{tableau, }
+\item[{point2\-Dui}]{point, }
+\item[{int}]{pas, }
+\item[{std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$}]{points\-Environnants = {\ttfamily nullptr}, }
+\item[{bool}]{phase = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_aa685d2a385bbfe1a71a1650004238202}
+Cette fonction va donner à l'utilisateur la hauteur des quatres points les plus proches \begin{DoxyNote}{Note}
+Elle n'est faite que pour être utilisée par Diamond\-Square\-Noise 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Si cette fonction occure un segfault, celà vient probablement du fait que pas ou tableau est à une valeur érronnée 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & Une référence vers le chunk père du point \\
+\hline
+{\em pas} & Le nombre de points par lequel on est autorisé à parcourir le chunk (de un \par
+ en un pour les chunk finis, de quatre en quatre pour les chunks qu'il reste à subdiviser deux fois) \\
+\hline
+{\em phase} & Détermine si le point est en phase carré ou diamond, ce qui nous donne un indice sur les points l'environnant \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 171 of file utilities.\-cpp.
+
+
+
+Referenced by diamond\-Square\-Noise().
+
+\hypertarget{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}{\index{Unoise@{Unoise}!perlin\-Noise@{perlin\-Noise}}
+\index{perlin\-Noise@{perlin\-Noise}!Unoise@{Unoise}}
+\subsubsection[{perlin\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}float Unoise\-::perlin\-Noise (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{res, }
+\item[{Perm\-Table $\ast$}]{perm}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}
+
+
+Fonction du bruit de perlin (float x, float z, float resolution, table de permutation)\-: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & La position X \\
+\hline
+{\em y} & La position Z \\
+\hline
+{\em res} & La douceur du terrain \\
+\hline
+{\em perm} & Le pointeur vers la table de permutation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+La fonction est défective 
+\end{DoxyWarning}
+
+
+Definition at line 322 of file utilities.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}{\index{Unoise@{Unoise}!set\-Perm\-Table@{set\-Perm\-Table}}
+\index{set\-Perm\-Table@{set\-Perm\-Table}!Unoise@{Unoise}}
+\subsubsection[{set\-Perm\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Unoise\-::set\-Perm\-Table (
+\begin{DoxyParamCaption}
+\item[{Perm\-Table $\ast$}]{perm}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}
+
+
+Pas obligatoire, cette fonction permet de changer lambda\-Perm\-Table. 
+
+
+
+Definition at line 124 of file utilities.\-cpp.
+
+\hypertarget{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}{\index{Unoise@{Unoise}!set\-Seed@{set\-Seed}}
+\index{set\-Seed@{set\-Seed}!Unoise@{Unoise}}
+\subsubsection[{set\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}void Unoise\-::set\-Seed (
+\begin{DoxyParamCaption}
+\item[{int}]{graine}
+\end{DoxyParamCaption}
+)}}\label{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}
+
+
+Definition at line 118 of file utilities.\-cpp.
+
+
+
+Referenced by gen\-Perm\-Table().
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_unoise_acf4515c07424188371eeb9cf77d34fb3}{\index{Unoise@{Unoise}!lambda\-Perm\-Table@{lambda\-Perm\-Table}}
+\index{lambda\-Perm\-Table@{lambda\-Perm\-Table}!Unoise@{Unoise}}
+\subsubsection[{lambda\-Perm\-Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Perm\-Table}$\ast$ Unoise\-::lambda\-Perm\-Table =nullptr}}\label{namespace_unoise_acf4515c07424188371eeb9cf77d34fb3}
+
+
+Definition at line 115 of file utilities.\-cpp.
+
+
+
+Referenced by perlin\-Noise(), and set\-Perm\-Table().
+
+\hypertarget{namespace_unoise_ae6356ffd0fec247f6d19c762e1757fc3}{\index{Unoise@{Unoise}!seed@{seed}}
+\index{seed@{seed}!Unoise@{Unoise}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}int Unoise\-::seed =42}}\label{namespace_unoise_ae6356ffd0fec247f6d19c762e1757fc3}
+
+
+Definition at line 116 of file utilities.\-cpp.
+
+
+
+Referenced by diamond\-Square\-Noise(), perlin\-Noise(), and set\-Seed().
+

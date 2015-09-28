@@ -1,0 +1,152 @@
+\hypertarget{class_sprite_list}{\section{Sprite\-List Class Reference}
+\label{class_sprite_list}\index{Sprite\-List@{Sprite\-List}}
+}
+
+
+{\ttfamily \#include $<$general.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sprite_list_a73c339180c9a10829d376833ebf3f88a}{Sprite\-List} ()
+\item 
+sf\-::\-Sprite $\ast$ \hyperlink{class_sprite_list_a1f9cb9cef32d7b73e83539a8fc84c05d}{Add\-Sprite} (sf\-::\-Sprite sprite, std\-::string id, unsigned int priority)
+\item 
+void \hyperlink{class_sprite_list_acab29c36364d8b684e6d82d381a3a834}{Remove\-Sprite} (std\-::string id)
+\item 
+std\-::multimap$<$ unsigned int, \\*
+sf\-::\-Sprite $\ast$ $>$ $\ast$ \hyperlink{class_sprite_list_a231c6090b04c2b0ba261f9ce5e3d1f1c}{get\-Priority\-Map} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_sprite_list}{Sprite\-List} $\ast$ \hyperlink{class_sprite_list_a31aad8d098174638df4d85fae19d9176}{get\-General\-Sprite\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ std\-::string, \\*
+sf\-::\-Sprite $\ast$ $>$ \hyperlink{class_sprite_list_aa0ca6f88f303676cb1592098cf4a38ea}{index\-Map}
+\item 
+std\-::multimap$<$ unsigned int, \\*
+sf\-::\-Sprite $\ast$ $>$ \hyperlink{class_sprite_list_a79da3c65e989060ad28f5bb2690e757b}{priority\-Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file general.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sprite_list_a73c339180c9a10829d376833ebf3f88a}{\index{Sprite\-List@{Sprite\-List}!Sprite\-List@{Sprite\-List}}
+\index{Sprite\-List@{Sprite\-List}!SpriteList@{Sprite\-List}}
+\subsubsection[{Sprite\-List}]{\setlength{\rightskip}{0pt plus 5cm}Sprite\-List\-::\-Sprite\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_sprite_list_a73c339180c9a10829d376833ebf3f88a}
+
+
+Definition at line 29 of file general.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sprite_list_a1f9cb9cef32d7b73e83539a8fc84c05d}{\index{Sprite\-List@{Sprite\-List}!Add\-Sprite@{Add\-Sprite}}
+\index{Add\-Sprite@{Add\-Sprite}!SpriteList@{Sprite\-List}}
+\subsubsection[{Add\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ Sprite\-List\-::\-Add\-Sprite (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Sprite}]{sprite, }
+\item[{std\-::string}]{id, }
+\item[{unsigned int}]{priority}
+\end{DoxyParamCaption}
+)}}\label{class_sprite_list_a1f9cb9cef32d7b73e83539a8fc84c05d}
+\begin{DoxyReturn}{Returns}
+Le sprite reset 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file general.\-cpp.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite().
+
+\hypertarget{class_sprite_list_a31aad8d098174638df4d85fae19d9176}{\index{Sprite\-List@{Sprite\-List}!get\-General\-Sprite\-List@{get\-General\-Sprite\-List}}
+\index{get\-General\-Sprite\-List@{get\-General\-Sprite\-List}!SpriteList@{Sprite\-List}}
+\subsubsection[{get\-General\-Sprite\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sprite\-List} $\ast$ Sprite\-List\-::get\-General\-Sprite\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_sprite_list_a31aad8d098174638df4d85fae19d9176}
+
+
+Definition at line 7 of file general.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize(), and Window\-Entity\-::actuate\-Sprite().
+
+\hypertarget{class_sprite_list_a231c6090b04c2b0ba261f9ce5e3d1f1c}{\index{Sprite\-List@{Sprite\-List}!get\-Priority\-Map@{get\-Priority\-Map}}
+\index{get\-Priority\-Map@{get\-Priority\-Map}!SpriteList@{Sprite\-List}}
+\subsubsection[{get\-Priority\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::multimap$<$unsigned int, sf\-::\-Sprite$\ast$$>$$\ast$ Sprite\-List\-::get\-Priority\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_sprite_list_a231c6090b04c2b0ba261f9ce5e3d1f1c}
+
+
+Definition at line 34 of file general.\-h.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_sprite_list_acab29c36364d8b684e6d82d381a3a834}{\index{Sprite\-List@{Sprite\-List}!Remove\-Sprite@{Remove\-Sprite}}
+\index{Remove\-Sprite@{Remove\-Sprite}!SpriteList@{Sprite\-List}}
+\subsubsection[{Remove\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}void Sprite\-List\-::\-Remove\-Sprite (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_sprite_list_acab29c36364d8b684e6d82d381a3a834}
+\begin{DoxyNote}{Note}
+check 1 
+\end{DoxyNote}
+
+
+Definition at line 49 of file general.\-cpp.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_sprite_list_aa0ca6f88f303676cb1592098cf4a38ea}{\index{Sprite\-List@{Sprite\-List}!index\-Map@{index\-Map}}
+\index{index\-Map@{index\-Map}!SpriteList@{Sprite\-List}}
+\subsubsection[{index\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, sf\-::\-Sprite$\ast$$>$ Sprite\-List\-::index\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sprite_list_aa0ca6f88f303676cb1592098cf4a38ea}
+
+
+Definition at line 34 of file general.\-h.
+
+
+
+Referenced by Add\-Sprite(), and Remove\-Sprite().
+
+\hypertarget{class_sprite_list_a79da3c65e989060ad28f5bb2690e757b}{\index{Sprite\-List@{Sprite\-List}!priority\-Map@{priority\-Map}}
+\index{priority\-Map@{priority\-Map}!SpriteList@{Sprite\-List}}
+\subsubsection[{priority\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::multimap$<$unsigned int, sf\-::\-Sprite$\ast$$>$ Sprite\-List\-::priority\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sprite_list_a79da3c65e989060ad28f5bb2690e757b}
+
+
+Definition at line 38 of file general.\-h.
+
+
+
+Referenced by Add\-Sprite(), and Remove\-Sprite().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-General/\hyperlink{general_8h}{general.\-h}\item 
+src/\-General/\hyperlink{general_8cpp}{general.\-cpp}\end{DoxyCompactItemize}

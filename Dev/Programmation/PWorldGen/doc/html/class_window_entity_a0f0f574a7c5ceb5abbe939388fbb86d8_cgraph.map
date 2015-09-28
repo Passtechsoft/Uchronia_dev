@@ -1,0 +1,5 @@
+<map id="WindowEntity::actuateSprite" name="WindowEntity::actuateSprite">
+<area shape="rect" id="node2" href="$class_sprite_list.html#a31aad8d098174638df4d85fae19d9176" title="SpriteList::getGeneralSpriteList" alt="" coords="243,5,445,32"/>
+<area shape="rect" id="node3" href="$class_sprite_list.html#a1f9cb9cef32d7b73e83539a8fc84c05d" title="SpriteList::AddSprite" alt="" coords="273,56,415,83"/>
+<area shape="rect" id="node4" href="$class_window_entity.html#afc0ddfdb22e1032751913af734025f2c" title="WindowEntity::setZone" alt="" coords="265,107,423,133"/>
+</map>

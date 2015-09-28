@@ -1,0 +1,6 @@
+<map id="Player::actualiser" name="Player::actualiser">
+<area shape="rect" id="node2" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Restart le timer uniquement la première fois ou quand stop a été appelé juste avant. " alt="" coords="206,5,295,32"/>
+<area shape="rect" id="node3" href="$class_ntsa_window.html#a8504a8160e6c88968662c55ea4587f6c" title="NtsaWindow::getSize" alt="" coords="176,56,325,83"/>
+<area shape="rect" id="node4" href="$class_rect.html#a7e6fca19d0ce00e318775d37631e2e0d" title="Rect::setPosition" alt="" coords="189,107,312,133"/>
+<area shape="rect" id="node5" href="$class_rect.html#a9c289437abe60bbb455c1b494a15eac3" title="Rect::setZone" alt="" coords="374,107,479,133"/>
+</map>

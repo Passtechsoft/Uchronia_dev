@@ -1,0 +1,229 @@
+\hypertarget{class_visual_effect}{\section{Visual\-Effect Class Reference}
+\label{class_visual_effect}\index{Visual\-Effect@{Visual\-Effect}}
+}
+
+
+Une classe gérant effet visuel temporaire.  
+
+
+
+
+{\ttfamily \#include $<$Window\-Entity.\-h$>$}
+
+
+
+Inheritance diagram for Visual\-Effect\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_visual_effect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Visual\-Effect\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_visual_effect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_visual_effect_a424c945f200061a6818471361620078d}{Remote} \{ \hyperlink{class_visual_effect_a424c945f200061a6818471361620078dad1f70d60d969d21d94155120b9afcd91}{Stop}, 
+\hyperlink{class_visual_effect_a424c945f200061a6818471361620078da3180538978112bf1a50060a7ebf9c16c}{Continue}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_visual_effect_a521efaa2152011dc90cecb1b0b2232da}{Visual\-Effect} ()
+\item 
+\hyperlink{class_visual_effect_a3c6c57d83f67512337c67fe5a7dcaf4c}{Visual\-Effect} (float x, float y, float width, float height, sf\-::\-Time cycle\-Duration, sf\-::\-Time duration=sf\-::seconds(0))
+\item 
+void \hyperlink{class_visual_effect_a8444177403c955aa02d6e82e55e34297}{operator()} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_visual_effect_adcc6e6f9398d40e7cb9cae9edfcaace5}{update\-Action} (int cycle\-Actuel)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_visual_effect_a424c945f200061a6818471361620078d}{Remote} \hyperlink{class_visual_effect_a345e31dcd679c46231bb028f4eb716fd}{m\-\_\-remote} =Remote\-::\-Continue
+\item 
+\hyperlink{class_timer}{Timer} \hyperlink{class_visual_effect_a810d29aed760dcfe3b1bd6e0fd85243a}{m\-\_\-timer}
+\item 
+sf\-::\-Time \hyperlink{class_visual_effect_abb44ecb249d5fca2af1ecd72c5a20e49}{m\-\_\-duration}
+\item 
+sf\-::\-Time \hyperlink{class_visual_effect_a9b414b1c6acfebad5d33a6b767c45ff7}{m\-\_\-cycle\-Duration}
+\item 
+bool \hyperlink{class_visual_effect_a46968c3c2f3ef411b19ea03edcb96f92}{m\-\_\-active} =false
+\begin{DoxyCompactList}\small\item\em La durée d'un cycle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Une classe gérant effet visuel temporaire. 
+
+Definition at line 36 of file Window\-Entity.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_visual_effect_a424c945f200061a6818471361620078d}{\index{Visual\-Effect@{Visual\-Effect}!Remote@{Remote}}
+\index{Remote@{Remote}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{Remote}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Visual\-Effect\-::\-Remote}}}\label{class_visual_effect_a424c945f200061a6818471361620078d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Stop@{Stop}!Visual\-Effect@{Visual\-Effect}}\index{Visual\-Effect@{Visual\-Effect}!Stop@{Stop}}\item[{\em 
+\hypertarget{class_visual_effect_a424c945f200061a6818471361620078dad1f70d60d969d21d94155120b9afcd91}{Stop}\label{class_visual_effect_a424c945f200061a6818471361620078dad1f70d60d969d21d94155120b9afcd91}
+}]\index{Continue@{Continue}!Visual\-Effect@{Visual\-Effect}}\index{Visual\-Effect@{Visual\-Effect}!Continue@{Continue}}\item[{\em 
+\hypertarget{class_visual_effect_a424c945f200061a6818471361620078da3180538978112bf1a50060a7ebf9c16c}{Continue}\label{class_visual_effect_a424c945f200061a6818471361620078da3180538978112bf1a50060a7ebf9c16c}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 43 of file Window\-Entity.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_visual_effect_a521efaa2152011dc90cecb1b0b2232da}{\index{Visual\-Effect@{Visual\-Effect}!Visual\-Effect@{Visual\-Effect}}
+\index{Visual\-Effect@{Visual\-Effect}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{Visual\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}Visual\-Effect\-::\-Visual\-Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_visual_effect_a521efaa2152011dc90cecb1b0b2232da}
+
+
+Definition at line 39 of file Window\-Entity.\-h.
+
+\hypertarget{class_visual_effect_a3c6c57d83f67512337c67fe5a7dcaf4c}{\index{Visual\-Effect@{Visual\-Effect}!Visual\-Effect@{Visual\-Effect}}
+\index{Visual\-Effect@{Visual\-Effect}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{Visual\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}Visual\-Effect\-::\-Visual\-Effect (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{sf\-::\-Time}]{cycle\-Duration, }
+\item[{sf\-::\-Time}]{duration = {\ttfamily sf\-:\-:seconds(0)}}
+\end{DoxyParamCaption}
+)}}\label{class_visual_effect_a3c6c57d83f67512337c67fe5a7dcaf4c}
+
+
+Definition at line 128 of file Window\-Entity.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_visual_effect_a8444177403c955aa02d6e82e55e34297}{\index{Visual\-Effect@{Visual\-Effect}!operator()@{operator()}}
+\index{operator()@{operator()}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Visual\-Effect\-::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_visual_effect_a8444177403c955aa02d6e82e55e34297}
+Cette fonction est lancée dans le thread {\itshape m\-\_\-thread} à l'appel de l'effet, pour plus de modularité, \par
+elle ne fais rien en elle même mais appelle la fonction 
+
+Definition at line 143 of file Window\-Entity.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visual_effect_a8444177403c955aa02d6e82e55e34297_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_visual_effect_adcc6e6f9398d40e7cb9cae9edfcaace5}{\index{Visual\-Effect@{Visual\-Effect}!update\-Action@{update\-Action}}
+\index{update\-Action@{update\-Action}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{update\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Visual\-Effect\-::update\-Action (
+\begin{DoxyParamCaption}
+\item[{int}]{cycle\-Actuel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_visual_effect_adcc6e6f9398d40e7cb9cae9edfcaace5}
+
+
+Definition at line 45 of file Window\-Entity.\-h.
+
+
+
+Referenced by operator()().
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_visual_effect_a46968c3c2f3ef411b19ea03edcb96f92}{\index{Visual\-Effect@{Visual\-Effect}!m\-\_\-active@{m\-\_\-active}}
+\index{m\-\_\-active@{m\-\_\-active}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{m\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}bool Visual\-Effect\-::m\-\_\-active =false\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_visual_effect_a46968c3c2f3ef411b19ea03edcb96f92}
+
+
+La durée d'un cycle. 
+
+
+
+Definition at line 53 of file Window\-Entity.\-h.
+
+
+
+Referenced by operator()().
+
+\hypertarget{class_visual_effect_a9b414b1c6acfebad5d33a6b767c45ff7}{\index{Visual\-Effect@{Visual\-Effect}!m\-\_\-cycle\-Duration@{m\-\_\-cycle\-Duration}}
+\index{m\-\_\-cycle\-Duration@{m\-\_\-cycle\-Duration}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{m\-\_\-cycle\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Time Visual\-Effect\-::m\-\_\-cycle\-Duration\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_visual_effect_a9b414b1c6acfebad5d33a6b767c45ff7}
+
+
+Definition at line 51 of file Window\-Entity.\-h.
+
+
+
+Referenced by operator()(), and Visual\-Effect().
+
+\hypertarget{class_visual_effect_abb44ecb249d5fca2af1ecd72c5a20e49}{\index{Visual\-Effect@{Visual\-Effect}!m\-\_\-duration@{m\-\_\-duration}}
+\index{m\-\_\-duration@{m\-\_\-duration}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{m\-\_\-duration}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Time Visual\-Effect\-::m\-\_\-duration\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_visual_effect_abb44ecb249d5fca2af1ecd72c5a20e49}
+
+
+Definition at line 50 of file Window\-Entity.\-h.
+
+
+
+Referenced by Visual\-Effect().
+
+\hypertarget{class_visual_effect_a345e31dcd679c46231bb028f4eb716fd}{\index{Visual\-Effect@{Visual\-Effect}!m\-\_\-remote@{m\-\_\-remote}}
+\index{m\-\_\-remote@{m\-\_\-remote}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{m\-\_\-remote}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Remote} Visual\-Effect\-::m\-\_\-remote =Remote\-::\-Continue\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_visual_effect_a345e31dcd679c46231bb028f4eb716fd}
+
+
+Definition at line 47 of file Window\-Entity.\-h.
+
+
+
+Referenced by operator()().
+
+\hypertarget{class_visual_effect_a810d29aed760dcfe3b1bd6e0fd85243a}{\index{Visual\-Effect@{Visual\-Effect}!m\-\_\-timer@{m\-\_\-timer}}
+\index{m\-\_\-timer@{m\-\_\-timer}!VisualEffect@{Visual\-Effect}}
+\subsubsection[{m\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer} Visual\-Effect\-::m\-\_\-timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_visual_effect_a810d29aed760dcfe3b1bd6e0fd85243a}
+
+
+Definition at line 49 of file Window\-Entity.\-h.
+
+
+
+Referenced by operator()().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Graphics/\hyperlink{_window_entity_8h}{Window\-Entity.\-h}\item 
+src/\-Graphics/\hyperlink{_window_entity_8cpp}{Window\-Entity.\-cpp}\end{DoxyCompactItemize}

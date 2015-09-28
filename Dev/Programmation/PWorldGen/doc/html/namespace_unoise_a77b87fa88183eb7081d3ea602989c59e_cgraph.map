@@ -1,0 +1,4 @@
+<map id="Unoise::perlinNoise" name="Unoise::perlinNoise">
+<area shape="rect" id="node2" href="$namespace_unoise.html#a5a1dbb7caee818c615fdfedc2ff19730" title="On génère la table de permutation à partir d&#39;un seed. " alt="" coords="189,5,344,32"/>
+<area shape="rect" id="node3" href="$namespace_unoise.html#a5dbbb2ae6c75efd29abd5663db08ec0e" title="Unoise::setSeed" alt="" coords="393,5,511,32"/>
+</map>

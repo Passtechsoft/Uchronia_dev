@@ -1,0 +1,5 @@
+<map id="VisualEffect" name="VisualEffect">
+<area shape="rect" id="node4" href="$class_space_laser.html" title="Cette classe ressemble en tout points à VisualEffect mis à part un construxteur légèrement différent..." alt="" coords="11,229,101,256"/>
+<area shape="rect" id="node2" href="$class_window_entity.html" title="WindowEntity" alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node3" href="$class_rect.html" title="Rect" alt="" coords="31,5,81,32"/>
+</map>

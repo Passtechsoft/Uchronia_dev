@@ -1,0 +1,252 @@
+\hypertarget{class_entity}{\section{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+}
+
+
+{\ttfamily \#include $<$entity.\-h$>$}
+
+
+
+Inheritance diagram for Entity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Entity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_entity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034}{Direction} \{ \\*
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034a4803b5fc09325c357306efca6aec7d51}{Up}, 
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034aca17a432012ff0ad12d64fb7002a8dfb}{Down}, 
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034acdaf97e899d1e2f8c6e954407b9e9639}{Front}, 
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034a8c4d4b4ceef8bff2884d0bf450a0bff6}{Back}, 
+\\*
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034a869b7581994c699f0dab2b617d30a12d}{Nope}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity} ()
+\item 
+\hyperlink{class_entity_af0d855b4b36ea55fa5e374e3381c13cc}{Entity} (std\-::string name, unsigned int priority, std\-::string texture\-I\-D=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_entity_a2e553246efacb426f0806faf59b017e7}{stabilize} ()
+\item 
+void \hyperlink{class_entity_a7c921a26a91394a2cb6aca2aae78bbbe}{stop\-Moving} ()
+\item 
+void \hyperlink{class_entity_a4b8c151c2e5f7337b4cf74df6ccc62f5}{stop\-Acceleration} ()
+\item 
+void \hyperlink{class_entity_a0f563cb7a800d95e7b8f2c030f9435f4}{move\-Somewere} (\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034}{Direction} direction)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_entity_aba5b0aae47c86e29e813d91e9bcab02b}{set\-Speed\-Up\-Down} (int speed=3)
+\item 
+void \hyperlink{class_entity_a5f6cf81a507a7b4a4068528b3c9faf24}{set\-Speed\-Front} (int speed=4)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_entity_aee87de23c1e63a14dff1f2dd8597496d}{m\-\_\-speed\-Up\-Down} =0
+\item 
+float \hyperlink{class_entity_a6355c1ec7f08c88b955c7960b8e1ef60}{m\-\_\-speed\-Front} =0
+\item 
+unsigned int \hyperlink{class_entity_aeffb6deae5015518100f49b680a44fa0}{m\-\_\-life\-Points} =100
+\item 
+\hyperlink{class_entity_ac6ff3a9435d7dacb378891eadd127034}{Direction} \hyperlink{class_entity_a687d37b15315f2b663f1b63576281bd2}{m\-\_\-direction\-Acceleration} =Direction\-::\-Nope
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classiquement, une entité représente un élément du niveau qui peut se mouvoir (un ennemi, où même un simple astéroide de passage) \par
+mais également intéragir avec les autres entités via les collisions 
+
+Definition at line 17 of file entity.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034}{\index{Entity@{Entity}!Direction@{Direction}}
+\index{Direction@{Direction}!Entity@{Entity}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Entity\-::\-Direction}}}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Up@{Up}!Entity@{Entity}}\index{Entity@{Entity}!Up@{Up}}\item[{\em 
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034a4803b5fc09325c357306efca6aec7d51}{Up}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034a4803b5fc09325c357306efca6aec7d51}
+}]\index{Down@{Down}!Entity@{Entity}}\index{Entity@{Entity}!Down@{Down}}\item[{\em 
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034aca17a432012ff0ad12d64fb7002a8dfb}{Down}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034aca17a432012ff0ad12d64fb7002a8dfb}
+}]\index{Front@{Front}!Entity@{Entity}}\index{Entity@{Entity}!Front@{Front}}\item[{\em 
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034acdaf97e899d1e2f8c6e954407b9e9639}{Front}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034acdaf97e899d1e2f8c6e954407b9e9639}
+}]\index{Back@{Back}!Entity@{Entity}}\index{Entity@{Entity}!Back@{Back}}\item[{\em 
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034a8c4d4b4ceef8bff2884d0bf450a0bff6}{Back}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034a8c4d4b4ceef8bff2884d0bf450a0bff6}
+}]\index{Nope@{Nope}!Entity@{Entity}}\index{Entity@{Entity}!Nope@{Nope}}\item[{\em 
+\hypertarget{class_entity_ac6ff3a9435d7dacb378891eadd127034a869b7581994c699f0dab2b617d30a12d}{Nope}\label{class_entity_ac6ff3a9435d7dacb378891eadd127034a869b7581994c699f0dab2b617d30a12d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 20 of file entity.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_entity_a980f368aa07ce358583982821533a54a}{\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection[{Entity}]{\setlength{\rightskip}{0pt plus 5cm}Entity\-::\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a980f368aa07ce358583982821533a54a}
+
+
+Definition at line 7 of file entity.\-cpp.
+
+\hypertarget{class_entity_af0d855b4b36ea55fa5e374e3381c13cc}{\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection[{Entity}]{\setlength{\rightskip}{0pt plus 5cm}Entity\-::\-Entity (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{unsigned int}]{priority, }
+\item[{std\-::string}]{texture\-I\-D = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_entity_af0d855b4b36ea55fa5e374e3381c13cc}
+
+
+Definition at line 10 of file entity.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_entity_a0f563cb7a800d95e7b8f2c030f9435f4}{\index{Entity@{Entity}!move\-Somewere@{move\-Somewere}}
+\index{move\-Somewere@{move\-Somewere}!Entity@{Entity}}
+\subsubsection[{move\-Somewere}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::move\-Somewere (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a0f563cb7a800d95e7b8f2c030f9435f4}
+
+
+Definition at line 30 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_entity_a5f6cf81a507a7b4a4068528b3c9faf24}{\index{Entity@{Entity}!set\-Speed\-Front@{set\-Speed\-Front}}
+\index{set\-Speed\-Front@{set\-Speed\-Front}!Entity@{Entity}}
+\subsubsection[{set\-Speed\-Front}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::set\-Speed\-Front (
+\begin{DoxyParamCaption}
+\item[{int}]{speed = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_a5f6cf81a507a7b4a4068528b3c9faf24}
+\hypertarget{class_entity_aba5b0aae47c86e29e813d91e9bcab02b}{\index{Entity@{Entity}!set\-Speed\-Up\-Down@{set\-Speed\-Up\-Down}}
+\index{set\-Speed\-Up\-Down@{set\-Speed\-Up\-Down}!Entity@{Entity}}
+\subsubsection[{set\-Speed\-Up\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::set\-Speed\-Up\-Down (
+\begin{DoxyParamCaption}
+\item[{int}]{speed = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_aba5b0aae47c86e29e813d91e9bcab02b}
+\hypertarget{class_entity_a2e553246efacb426f0806faf59b017e7}{\index{Entity@{Entity}!stabilize@{stabilize}}
+\index{stabilize@{stabilize}!Entity@{Entity}}
+\subsubsection[{stabilize}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::stabilize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a2e553246efacb426f0806faf59b017e7}
+
+
+Definition at line 14 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_entity_a4b8c151c2e5f7337b4cf74df6ccc62f5}{\index{Entity@{Entity}!stop\-Acceleration@{stop\-Acceleration}}
+\index{stop\-Acceleration@{stop\-Acceleration}!Entity@{Entity}}
+\subsubsection[{stop\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::stop\-Acceleration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a4b8c151c2e5f7337b4cf74df6ccc62f5}
+
+
+Definition at line 19 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_entity_a7c921a26a91394a2cb6aca2aae78bbbe}{\index{Entity@{Entity}!stop\-Moving@{stop\-Moving}}
+\index{stop\-Moving@{stop\-Moving}!Entity@{Entity}}
+\subsubsection[{stop\-Moving}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\-::stop\-Moving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a7c921a26a91394a2cb6aca2aae78bbbe}
+
+
+Definition at line 24 of file entity.\-cpp.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_entity_a687d37b15315f2b663f1b63576281bd2}{\index{Entity@{Entity}!m\-\_\-direction\-Acceleration@{m\-\_\-direction\-Acceleration}}
+\index{m\-\_\-direction\-Acceleration@{m\-\_\-direction\-Acceleration}!Entity@{Entity}}
+\subsubsection[{m\-\_\-direction\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} Entity\-::m\-\_\-direction\-Acceleration =Direction\-::\-Nope\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_a687d37b15315f2b663f1b63576281bd2}
+
+
+Definition at line 39 of file entity.\-h.
+
+
+
+Referenced by Player\-::actualiser(), move\-Somewere(), and stop\-Acceleration().
+
+\hypertarget{class_entity_aeffb6deae5015518100f49b680a44fa0}{\index{Entity@{Entity}!m\-\_\-life\-Points@{m\-\_\-life\-Points}}
+\index{m\-\_\-life\-Points@{m\-\_\-life\-Points}!Entity@{Entity}}
+\subsubsection[{m\-\_\-life\-Points}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Entity\-::m\-\_\-life\-Points =100\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_aeffb6deae5015518100f49b680a44fa0}
+
+
+Definition at line 34 of file entity.\-h.
+
+\hypertarget{class_entity_a6355c1ec7f08c88b955c7960b8e1ef60}{\index{Entity@{Entity}!m\-\_\-speed\-Front@{m\-\_\-speed\-Front}}
+\index{m\-\_\-speed\-Front@{m\-\_\-speed\-Front}!Entity@{Entity}}
+\subsubsection[{m\-\_\-speed\-Front}]{\setlength{\rightskip}{0pt plus 5cm}float Entity\-::m\-\_\-speed\-Front =0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_a6355c1ec7f08c88b955c7960b8e1ef60}
+
+
+Definition at line 32 of file entity.\-h.
+
+
+
+Referenced by stop\-Moving().
+
+\hypertarget{class_entity_aee87de23c1e63a14dff1f2dd8597496d}{\index{Entity@{Entity}!m\-\_\-speed\-Up\-Down@{m\-\_\-speed\-Up\-Down}}
+\index{m\-\_\-speed\-Up\-Down@{m\-\_\-speed\-Up\-Down}!Entity@{Entity}}
+\subsubsection[{m\-\_\-speed\-Up\-Down}]{\setlength{\rightskip}{0pt plus 5cm}float Entity\-::m\-\_\-speed\-Up\-Down =0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_entity_aee87de23c1e63a14dff1f2dd8597496d}
+
+
+Definition at line 31 of file entity.\-h.
+
+
+
+Referenced by Player\-::actualiser(), stabilize(), and stop\-Moving().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Graphics/\hyperlink{entity_8h}{entity.\-h}\item 
+src/\-Graphics/\hyperlink{entity_8cpp}{entity.\-cpp}\end{DoxyCompactItemize}

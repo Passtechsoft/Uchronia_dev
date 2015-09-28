@@ -1,0 +1,209 @@
+\hypertarget{utilities_8cpp}{\section{src/\-General/utilities.cpp File Reference}
+\label{utilities_8cpp}\index{src/\-General/utilities.\-cpp@{src/\-General/utilities.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+Include dependency graph for utilities.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unoise_1_1point2_dui}{Unoise\-::point2\-Dui}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_uchronia}{Uchronia}
+\item 
+\hyperlink{namespace_unoise}{Unoise}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_uchronia}{Uchronia} noise namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utilities_8cpp_ac2ee50f53dbe7afff4f9e7fd890d6ac6}{nbr\-Pts\-Cote\-Paire}~(nbre\-Points\-Cote-\/1)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ void $\ast$, int $>$ $\ast$ \hyperlink{utilities_8cpp_a75bbbedc6b11a69f16afa80db80e0876}{get\-Cpt\-Class} (std\-::string \&nom)
+\item 
+void \hyperlink{utilities_8cpp_a26d990e477056c4bd6a17a77a2db2927}{aff\-Ptr\-Flag} ()
+\item 
+bool \hyperlink{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}{probability} (int prob, int sur)
+\begin{DoxyCompactList}\small\item\em Permet de tester une certaine probabilité \end{DoxyCompactList}\item 
+string \hyperlink{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}{get\-Word} (\hyperlink{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort} word\-\_\-num, string \&chaine)
+\item 
+bool \hyperlink{utilities_8cpp_af701e0ba40a65bfd641a06968095fa75}{is\-In\-Word} (std\-::string word, std\-::string sub\-Word)
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{utilities_8cpp_a458702e54574d8cd6c8b21a11b5122c5}{get\-File\-With\-Sthx} (std\-::ifstream \&flux, unsigned int nbre\-Mots\-Attendus)
+\item 
+float \hyperlink{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}{positif} (int a)
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre en positif. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}{Unoise\-::set\-Seed} (int graine)
+\item 
+void \hyperlink{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}{Unoise\-::set\-Perm\-Table} (Perm\-Table $\ast$perm)
+\begin{DoxyCompactList}\small\item\em Pas obligatoire, cette fonction permet de changer lambda\-Perm\-Table. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}{Unoise\-::gen\-Perm\-Table} (Perm\-Table $\ast$, int)
+\begin{DoxyCompactList}\small\item\em On génère la table de permutation à partir d'un seed. \end{DoxyCompactList}\item 
+std\-::vector$<$ float $>$ \hyperlink{namespace_unoise_aa685d2a385bbfe1a71a1650004238202}{Unoise\-::get\-Positions\-Around} (Chunk\-Points $\ast$tableau, point2\-Dui point, int pas, std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$points\-Environnants=nullptr, bool phase=1)
+\item 
+Chunk\-Points \hyperlink{namespace_unoise_accabbc2fce05f7a55bd10ec573925275}{Unoise\-::diamond\-Square\-Noise} (float x, float y, int amplitude, float res, unsigned short sub\-Divisions, int nseed=-\/1, std\-::array$<$ float, 4 $>$ $\ast$points\-Principaux=nullptr, std\-::array$<$ std\-::vector$<$ float $>$, 4 $>$ $\ast$points\-Environnants=nullptr)
+\begin{DoxyCompactList}\small\item\em Midpoint displacement noise, ou Diamond square noise (nom latin\-: carrus diamus) \end{DoxyCompactList}\item 
+float \hyperlink{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}{Unoise\-::perlin\-Noise} (float x, float z, float res, Perm\-Table $\ast$perm=nullptr)
+\begin{DoxyCompactList}\small\item\em Fonction du bruit de perlin (float x, float z, float resolution, table de permutation)\-: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{utilities_8h_aebdb70b1a700d2545ec64bc1f8319326}{Compteur\-Classe\-Type} \hyperlink{utilities_8cpp_a08697cc3a053526e6768c45bbf3f2b68}{compteur\-Classes}
+\item 
+Perm\-Table $\ast$ \hyperlink{namespace_unoise_acf4515c07424188371eeb9cf77d34fb3}{Unoise\-::lambda\-Perm\-Table} =nullptr
+\item 
+int \hyperlink{namespace_unoise_ae6356ffd0fec247f6d19c762e1757fc3}{Unoise\-::seed} =42
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utilities_8cpp_ac2ee50f53dbe7afff4f9e7fd890d6ac6}{\index{utilities.\-cpp@{utilities.\-cpp}!nbr\-Pts\-Cote\-Paire@{nbr\-Pts\-Cote\-Paire}}
+\index{nbr\-Pts\-Cote\-Paire@{nbr\-Pts\-Cote\-Paire}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{nbr\-Pts\-Cote\-Paire}]{\setlength{\rightskip}{0pt plus 5cm}\#define nbr\-Pts\-Cote\-Paire~(nbre\-Points\-Cote-\/1)}}\label{utilities_8cpp_ac2ee50f53dbe7afff4f9e7fd890d6ac6}
+
+
+Referenced by Unoise\-::diamond\-Square\-Noise().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8cpp_a26d990e477056c4bd6a17a77a2db2927}{\index{utilities.\-cpp@{utilities.\-cpp}!aff\-Ptr\-Flag@{aff\-Ptr\-Flag}}
+\index{aff\-Ptr\-Flag@{aff\-Ptr\-Flag}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{aff\-Ptr\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void aff\-Ptr\-Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a26d990e477056c4bd6a17a77a2db2927}
+
+
+Definition at line 13 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a75bbbedc6b11a69f16afa80db80e0876}{\index{utilities.\-cpp@{utilities.\-cpp}!get\-Cpt\-Class@{get\-Cpt\-Class}}
+\index{get\-Cpt\-Class@{get\-Cpt\-Class}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{get\-Cpt\-Class}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$void $\ast$, int$>$$\ast$ get\-Cpt\-Class (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{nom}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a75bbbedc6b11a69f16afa80db80e0876}
+
+
+Definition at line 8 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a458702e54574d8cd6c8b21a11b5122c5}{\index{utilities.\-cpp@{utilities.\-cpp}!get\-File\-With\-Sthx@{get\-File\-With\-Sthx}}
+\index{get\-File\-With\-Sthx@{get\-File\-With\-Sthx}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{get\-File\-With\-Sthx}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ get\-File\-With\-Sthx (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{flux, }
+\item[{unsigned int}]{nbre\-Mots\-Attendus = {\ttfamily {\bf I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}}}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a458702e54574d8cd6c8b21a11b5122c5}
+Lis dans le fichier donné une liste de mots suivant ces conditions\-: si le premier mot de la chaîne \par
+se termine par \char`\"{}\-:\char`\"{}, on l'ignore (il est alors considéré comme une sorte de commentaire) et si le mot \par
+est \char`\"{};\char`\"{}, on s'arrête de rajouter des mots dans le vector. Enfin, on ne retourne qu'une nombre de mots égale\par
+à {\itshape nbre\-Mots\-Attendus}. 
+
+Definition at line 77 of file utilities.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{utilities_8cpp_a458702e54574d8cd6c8b21a11b5122c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}{\index{utilities.\-cpp@{utilities.\-cpp}!get\-Word@{get\-Word}}
+\index{get\-Word@{get\-Word}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{get\-Word}]{\setlength{\rightskip}{0pt plus 5cm}string get\-Word (
+\begin{DoxyParamCaption}
+\item[{{\bf ushort}}]{word\-\_\-num, }
+\item[{string \&}]{chaine}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}
+
+
+Definition at line 40 of file utilities.\-cpp.
+
+
+
+Referenced by Window\-Entity\-::load\-From\-Instructions().
+
+\hypertarget{utilities_8cpp_af701e0ba40a65bfd641a06968095fa75}{\index{utilities.\-cpp@{utilities.\-cpp}!is\-In\-Word@{is\-In\-Word}}
+\index{is\-In\-Word@{is\-In\-Word}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{is\-In\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-In\-Word (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{word, }
+\item[{std\-::string}]{sub\-Word}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_af701e0ba40a65bfd641a06968095fa75}
+\begin{DoxyReturn}{Returns}
+true si {\itshape sub\-Word} est dans {\itshape word} 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file utilities.\-cpp.
+
+
+
+Referenced by get\-File\-With\-Sthx().
+
+\hypertarget{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}{\index{utilities.\-cpp@{utilities.\-cpp}!positif@{positif}}
+\index{positif@{positif}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{positif}]{\setlength{\rightskip}{0pt plus 5cm}float positif (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}
+
+
+Renvoie le nombre en positif. 
+
+
+
+Definition at line 105 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}{\index{utilities.\-cpp@{utilities.\-cpp}!probability@{probability}}
+\index{probability@{probability}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}bool probability (
+\begin{DoxyParamCaption}
+\item[{int}]{prob, }
+\item[{int}]{sur}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}
+
+
+Permet de tester une certaine probabilité 
+
+
+
+Definition at line 35 of file utilities.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{utilities_8cpp_a08697cc3a053526e6768c45bbf3f2b68}{\index{utilities.\-cpp@{utilities.\-cpp}!compteur\-Classes@{compteur\-Classes}}
+\index{compteur\-Classes@{compteur\-Classes}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{compteur\-Classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compteur\-Classe\-Type} compteur\-Classes}}\label{utilities_8cpp_a08697cc3a053526e6768c45bbf3f2b68}
+
+
+Definition at line 7 of file utilities.\-cpp.
+
+
+
+Referenced by aff\-Ptr\-Flag(), and get\-Cpt\-Class().
+
