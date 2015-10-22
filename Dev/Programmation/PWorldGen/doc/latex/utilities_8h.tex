@@ -22,7 +22,8 @@ Include dependency graph for utilities.\-h\-:\nopagebreak
 \includegraphics[width=350pt]{utilities_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -77,6 +78,8 @@ struct \hyperlink{struct_unoise_1_1_diamond_perm_table}{Unoise\-::\-Diamond\-Per
 \#define \hyperlink{utilities_8h_a33b8df933d992ff1be22c0d05191c79e}{aff\-In\-Debug}(message, entree)~entree(message)
 \item 
 \#define \hyperlink{utilities_8h_a0d7644a795aa2dd33f01ef184f3f672a}{R\-A\-N\-D}(min, max)~( (rand() \% (max-\/min+1))+min )
+\item 
+\#define \hyperlink{utilities_8h_a6042b13d082c692eb725acf5dea13b7b}{M\-S\-L\-E\-E\-P}(msecs)~usleep(msecs$\ast$1000)
 \item 
 \#define \hyperlink{utilities_8h_a7e9d6bf9d4bba615fca7196a16b33b4e}{C\-A\-R\-R\-E}(var)~(var$\ast$var)
 \item 
@@ -167,7 +170,7 @@ Referenced by Window\-Entity\-::actuate\-Sprite(), Sprite\-List\-::\-Add\-Sprite
 )~(var$\ast$var)}}\label{utilities_8h_a7e9d6bf9d4bba615fca7196a16b33b4e}
 
 
-Definition at line 54 of file utilities.\-h.
+Definition at line 56 of file utilities.\-h.
 
 
 
@@ -210,7 +213,7 @@ Cette fonction ne garde qu'un certain nombre de chiffres de la partie entière.
 
 
 
-Definition at line 62 of file utilities.\-h.
+Definition at line 64 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a2308dd37abb259babc5baf6805bce76f}{\index{utilities.\-h@{utilities.\-h}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
 \index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!utilities.h@{utilities.\-h}}
@@ -244,7 +247,7 @@ Definition at line 5 of file utilities.\-h.
 )~(nbre/((float)diviseur)==(short)nbre/diviseur)}}\label{utilities_8h_aa536229c7484bedc4cb489147f5522de}
 
 
-Definition at line 64 of file utilities.\-h.
+Definition at line 66 of file utilities.\-h.
 
 \hypertarget{utilities_8h_acae6718a3f55bf5d018a4b458d5492c0}{\index{utilities.\-h@{utilities.\-h}!E\-R\-R\-O\-R@{E\-R\-R\-O\-R}}
 \index{E\-R\-R\-O\-R@{E\-R\-R\-O\-R}!utilities.h@{utilities.\-h}}
@@ -281,7 +284,7 @@ Referenced by Sprite\-List\-::\-Add\-Sprite(), Window\-Entity\-::add\-Texture(),
 \subsubsection[{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E~4294967295}}\label{utilities_8h_a5c7ba19c1dea5792082649d98514e3cd}
 
 
-Definition at line 66 of file utilities.\-h.
+Definition at line 68 of file utilities.\-h.
 
 
 
@@ -296,7 +299,7 @@ Referenced by Visual\-Effect\-::operator()().
 )~(result==(int)result)}}\label{utilities_8h_a6e2f5e51b142e0be9a976a8bdda7bd9d}
 
 
-Definition at line 57 of file utilities.\-h.
+Definition at line 59 of file utilities.\-h.
 
 \hypertarget{utilities_8h_ae92c1b3f2d775c70c1ce3f3e8c0a9550}{\index{utilities.\-h@{utilities.\-h}!I\-S\-P\-O\-S\-I\-T\-I\-V\-E@{I\-S\-P\-O\-S\-I\-T\-I\-V\-E}}
 \index{I\-S\-P\-O\-S\-I\-T\-I\-V\-E@{I\-S\-P\-O\-S\-I\-T\-I\-V\-E}!utilities.h@{utilities.\-h}}
@@ -307,7 +310,18 @@ Definition at line 57 of file utilities.\-h.
 )~(number$>$=0)}}\label{utilities_8h_ae92c1b3f2d775c70c1ce3f3e8c0a9550}
 
 
-Definition at line 59 of file utilities.\-h.
+Definition at line 61 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a6042b13d082c692eb725acf5dea13b7b}{\index{utilities.\-h@{utilities.\-h}!M\-S\-L\-E\-E\-P@{M\-S\-L\-E\-E\-P}}
+\index{M\-S\-L\-E\-E\-P@{M\-S\-L\-E\-E\-P}!utilities.h@{utilities.\-h}}
+\subsubsection[{M\-S\-L\-E\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-S\-L\-E\-E\-P(
+\begin{DoxyParamCaption}
+\item[{}]{msecs}
+\end{DoxyParamCaption}
+)~usleep(msecs$\ast$1000)}}\label{utilities_8h_a6042b13d082c692eb725acf5dea13b7b}
+
+
+Definition at line 53 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a68a06cdb6de2f5020a7def6942eaccad}{\index{utilities.\-h@{utilities.\-h}!P\-I\-M\-P@{P\-I\-M\-P}}
 \index{P\-I\-M\-P@{P\-I\-M\-P}!utilities.h@{utilities.\-h}}
@@ -386,7 +400,7 @@ Definition at line 29 of file utilities.\-h.
 )~{\bf compteur\-Classes}\mbox{[}nomclasse\mbox{]}.at(ptr\-Classe) -\/= 1}}\label{utilities_8h_a752fdc9393564b629934730e70f77c1f}
 
 
-Definition at line 77 of file utilities.\-h.
+Definition at line 79 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a7a89272eb35d77be1b8a785b12febb6d}{\index{utilities.\-h@{utilities.\-h}!ptr\-Flag\-Inc@{ptr\-Flag\-Inc}}
 \index{ptr\-Flag\-Inc@{ptr\-Flag\-Inc}!utilities.h@{utilities.\-h}}
@@ -398,7 +412,7 @@ Definition at line 77 of file utilities.\-h.
 )~{\bf compteur\-Classes}\mbox{[}nomclasse\mbox{]}.at(ptr\-Classe) += 1}}\label{utilities_8h_a7a89272eb35d77be1b8a785b12febb6d}
 
 
-Definition at line 76 of file utilities.\-h.
+Definition at line 78 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a0d7644a795aa2dd33f01ef184f3f672a}{\index{utilities.\-h@{utilities.\-h}!R\-A\-N\-D@{R\-A\-N\-D}}
 \index{R\-A\-N\-D@{R\-A\-N\-D}!utilities.h@{utilities.\-h}}
@@ -429,7 +443,7 @@ Definition at line 40 of file utilities.\-h.
 
 
 
-Referenced by Window\-Entity\-::add\-Texture(), Unoise\-::diamond\-Square\-Noise(), get\-File\-With\-Sthx(), get\-Word(), Window\-Entity\-::load\-From\-Instructions(), Texture\-List\-::load\-Textures(), and Window\-Entity\-::set\-Actuals().
+Referenced by Window\-Entity\-::add\-Texture(), aff\-Intro(), Unoise\-::diamond\-Square\-Noise(), get\-File\-With\-Sthx(), get\-Word(), Window\-Entity\-::load\-From\-Instructions(), Texture\-List\-::load\-Textures(), and Window\-Entity\-::set\-Actuals().
 
 
 
@@ -439,28 +453,28 @@ Referenced by Window\-Entity\-::add\-Texture(), Unoise\-::diamond\-Square\-Noise
 \subsubsection[{Compteur\-Classe\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$std\-::string, std\-::map$<$void$\ast$, int$>$ $>$ {\bf Compteur\-Classe\-Type}}}\label{utilities_8h_aebdb70b1a700d2545ec64bc1f8319326}
 
 
-Definition at line 69 of file utilities.\-h.
+Definition at line 71 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a177317577dc144582370c8b7b8efc15d}{\index{utilities.\-h@{utilities.\-h}!oct\-\_\-e@{oct\-\_\-e}}
 \index{oct\-\_\-e@{oct\-\_\-e}!utilities.h@{utilities.\-h}}
 \subsubsection[{oct\-\_\-e}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf oct\-\_\-e}}}\label{utilities_8h_a177317577dc144582370c8b7b8efc15d}
 
 
-Definition at line 70 of file utilities.\-h.
+Definition at line 72 of file utilities.\-h.
 
 \hypertarget{utilities_8h_a65f85814a8290f9797005d3b28e7e5fc}{\index{utilities.\-h@{utilities.\-h}!uchar@{uchar}}
 \index{uchar@{uchar}!utilities.h@{utilities.\-h}}
 \subsubsection[{uchar}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uchar}}}\label{utilities_8h_a65f85814a8290f9797005d3b28e7e5fc}
 
 
-Definition at line 71 of file utilities.\-h.
+Definition at line 73 of file utilities.\-h.
 
 \hypertarget{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{\index{utilities.\-h@{utilities.\-h}!ushort@{ushort}}
 \index{ushort@{ushort}!utilities.h@{utilities.\-h}}
 \subsubsection[{ushort}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf ushort}}}\label{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}
 
 
-Definition at line 72 of file utilities.\-h.
+Definition at line 74 of file utilities.\-h.
 
 
 

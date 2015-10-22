@@ -16,7 +16,7 @@ var indexSectionsWithContent =
   6: "copu",
   7: "dpr",
   8: "bcdfnsuxy",
-  9: "acdeinprw",
+  9: "acdeimnprw",
   10: "t"
 };
 

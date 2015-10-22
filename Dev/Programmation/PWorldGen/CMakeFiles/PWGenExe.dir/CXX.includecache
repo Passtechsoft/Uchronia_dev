@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/creeps/Documents/Uchronia_dev/Dev/Programmation/PWorldGen/main.cpp
+iostream
+-
+ctime
+-
+cstdlib
+-
+unistd.h
+-
+fstream
+-
+

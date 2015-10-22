@@ -1,10 +1,12 @@
 <map id="src/Graphics/WindowEntity.h" name="src/Graphics/WindowEntity.h">
-<area shape="rect" id="node2" href="$entity_8h.html" title="src/Graphics/entity.h" alt="" coords="83,80,225,107"/>
-<area shape="rect" id="node7" href="$_graphics_2_u_i_8h.html" title="src/Graphics/UI.h" alt="" coords="251,80,376,107"/>
-<area shape="rect" id="node9" href="$_window_entity_8cpp.html" title="src/Graphics/WindowEntity.cpp" alt="" coords="401,80,607,107"/>
-<area shape="rect" id="node3" href="$entity_8cpp.html" title="src/Graphics/entity.cpp" alt="" coords="5,229,163,256"/>
-<area shape="rect" id="node4" href="$ntsa_8h.html" title="src/Graphics/ntsa.h" alt="" coords="176,155,311,181"/>
-<area shape="rect" id="node5" href="$ntsa_8cpp.html" title="src/Graphics/ntsa.cpp" alt="" coords="187,229,337,256"/>
-<area shape="rect" id="node6" href="$_p_world_gen_8cpp.html" title="src/PWorldGen.cpp" alt="" coords="363,229,497,256"/>
-<area shape="rect" id="node8" href="$_graphics_2_u_i_8cpp.html" title="src/Graphics/UI.cpp" alt="" coords="336,155,475,181"/>
+<area shape="rect" id="node2" href="$_graphics_2_u_i_8h.html" title="src/Graphics/UI.h" alt="" coords="175,80,300,107"/>
+<area shape="rect" id="node10" href="$entity_8h.html" title="src/Graphics/entity.h" alt="" coords="325,80,467,107"/>
+<area shape="rect" id="node11" href="$_window_entity_8cpp.html" title="src/Graphics/WindowEntity.cpp" alt="" coords="491,80,697,107"/>
+<area shape="rect" id="node3" href="$ntsa_8h.html" title="src/Graphics/ntsa.h" alt="" coords="257,155,392,181"/>
+<area shape="rect" id="node9" href="$_graphics_2_u_i_8cpp.html" title="src/Graphics/UI.cpp" alt="" coords="95,155,233,181"/>
+<area shape="rect" id="node4" href="$_core_2_u_i_8h.html" title="src/Core/UI.h" alt="" coords="73,229,175,256"/>
+<area shape="rect" id="node6" href="$_p_world_gen_8cpp.html" title="src/PWorldGen.cpp" alt="" coords="144,304,279,331"/>
+<area shape="rect" id="node7" href="$entity_8cpp.html" title="src/Graphics/entity.cpp" alt="" coords="425,229,583,256"/>
+<area shape="rect" id="node8" href="$ntsa_8cpp.html" title="src/Graphics/ntsa.cpp" alt="" coords="250,229,400,256"/>
+<area shape="rect" id="node5" href="$_core_2_u_i_8cpp.html" title="src/Core/UI.cpp" alt="" coords="5,304,120,331"/>
 </map>
